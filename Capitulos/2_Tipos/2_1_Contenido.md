@@ -84,14 +84,14 @@ Una operación es polimórfica cuando puede ser usada con diferentes tipos, es d
 
 ****
 
-_[1] Cómo solicitar una operación, queda definido por en la declaración de la operación. Qué ocurre cuándo el objeto que recibe el mensaje ejecuta la operación, queda parcialmente definido por el resultado que aparece en la declaración. Pero el cambio de estado que la operación provoca y los efectos colaterales que pudiera tener, requieren especificación adicional; cuando veamos diseño por contrato complementaremos esta idea._
+_<sup>1</sup> Cómo solicitar una operación, queda definido por en la declaración de la operación. Qué ocurre cuándo el objeto que recibe el mensaje ejecuta la operación, queda parcialmente definido por el resultado que aparece en la declaración. Pero el cambio de estado que la operación provoca y los efectos colaterales que pudiera tener, requieren especificación adicional; cuando veamos diseño por contrato complementaremos esta idea._
 
-_[2] Usuario en este contexto es el objeto que usa al otro._
+_<sup>2</sup> Usuario en este contexto es el objeto que usa al otro._
 
-_[3] Lo que ocurra como resultado de procesar el mensaje, depende del método ejecutado, que a su vez depende tanto del selector del mensaje como del receptor. La dependencia del selector se debe a que selectores diferentes provocarán la ejecución de métodos diferentes. La dependencia del receptor se debe a que receptores de diferentes clases responderán a la solicitud con métodos diferentes._
+_<sup>3</sup> Lo que ocurra como resultado de procesar el mensaje, depende del método ejecutado, que a su vez depende tanto del selector del mensaje como del receptor. La dependencia del selector se debe a que selectores diferentes provocarán la ejecución de métodos diferentes. La dependencia del receptor se debe a que receptores de diferentes clases responderán a la solicitud con métodos diferentes._
 
-_[4] Este tipo de polimorfismo se llama **polimorfismo de subtipo**._
+_<sup>4</sup> Este tipo de polimorfismo se llama **polimorfismo de subtipo**._
 
-_[5] Un contexto determinado significa que no siempre una clase se puede usar en lugar de la otra y viceversa; sólo es válido intercambiar las dos clases, cuando el cliente espera que el receptor tenga un cierto tipo y ese tipo es uno que ambas clases tienen en común._
+_<sup>5</sup> Un contexto determinado significa que no siempre una clase se puede usar en lugar de la otra y viceversa; sólo es válido intercambiar las dos clases, cuando el cliente espera que el receptor tenga un cierto tipo y ese tipo es uno que ambas clases tienen en común._
 
-_[6] Este tipo de polimorfismo se llama **polimorfismo ad-hoc**. No existe en todos los lenguajes de programación y para algunos no es estrictamente una forma de polimorfismo, pues no es más que una construcción sintáctica para simplificar la lectura y escritura del código._
+_<sup>6</sup> Este tipo de polimorfismo se llama **polimorfismo ad-hoc**. No existe en todos los lenguajes de programación y para algunos no es estrictamente una forma de polimorfismo, pues no es más que una construcción sintáctica para simplificar la lectura y escritura del código._
