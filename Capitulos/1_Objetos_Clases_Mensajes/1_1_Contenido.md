@@ -64,12 +64,12 @@ Algo similar ocurre con los **atributos de clase**, que representan responsabili
 
 ****
 
-_[1] La forma en la que programamos los atributos es diferente en los distintos lenguajes de programación. Habitualmente las **variables de instancia** son la realización o implementación de los atributos, pero desde que otros objetos deben enviar un mensaje para consultar o cambiar el estado, el receptor es libre de implementar el método correspondiente como quiera, bien retornando o asignando una variable de instancia, o bien de otra forma._
+_<sup>1</sup> La forma en la que programamos los atributos es diferente en los distintos lenguajes de programación. Habitualmente las **variables de instancia** son la realización o implementación de los atributos, pero desde que otros objetos deben enviar un mensaje para consultar o cambiar el estado, el receptor es libre de implementar el método correspondiente como quiera, bien retornando o asignando una variable de instancia, o bien de otra forma._
 
-_[2] En algunos lenguajes como Smalltalk o CLOS es posible cambiar la clase de un objeto. Por ejemplo, en Smalltalk, `anObject become: newClass`. También es posible, y fácil, cambiar una clase en tiempo de ejecución y aunque existan instancias de esa clase._
+_<sup>2</sup> En algunos lenguajes como Smalltalk o CLOS es posible cambiar la clase de un objeto. Por ejemplo, en Smalltalk, `anObject become: newClass`. También es posible, y fácil, cambiar una clase en tiempo de ejecución y aunque existan instancias de esa clase._
 
-_[3] Se puede describir el mundo como las relaciones entre las clases de objetos, en lugar de las relaciones entre los objetos. Esta visión es útil para la mayoría de los aspectos estructurales y estáticos de relaciones entre clases, pero no para algunos aspectos dinámicos, que se describen mediante los objetos y no mediante sus clases._
+_<sup>3</sup> Se puede describir el mundo como las relaciones entre las clases de objetos, en lugar de las relaciones entre los objetos. Esta visión es útil para la mayoría de los aspectos estructurales y estáticos de relaciones entre clases, pero no para algunos aspectos dinámicos, que se describen mediante los objetos y no mediante sus clases._
 
-_[4] La sintaxis para crear nuevos objetos es diferente en los distintos lenguajes de programación y también puede ser diferente que la sintaxis para enviar un mensaje a un objeto._
+_<sup>4</sup> La sintaxis para crear nuevos objetos es diferente en los distintos lenguajes de programación y también puede ser diferente que la sintaxis para enviar un mensaje a un objeto._
 
-_[5] También la forma en la que programamos los atributos de clase es diferente en los distintos lenguajes de programación, pero también es habitual usar las variables de clase con ese propósito._
+_<sup>5</sup> También la forma en la que programamos los atributos de clase es diferente en los distintos lenguajes de programación, pero también es habitual usar las variables de clase con ese propósito._
