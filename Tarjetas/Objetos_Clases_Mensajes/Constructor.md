@@ -1,7 +1,7 @@
 <table id='card'>
     <tr>
         <td align='center'>
-            <h2>Constructor</h2>
+            <h3>Constructor</h3>
         </td>
     </tr>
     <tr>
