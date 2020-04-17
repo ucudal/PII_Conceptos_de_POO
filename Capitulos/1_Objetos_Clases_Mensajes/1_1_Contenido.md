@@ -3,7 +3,7 @@
 [Conceptos de Programación Orientada a Objetos](../)
 
 
-# 1. Objectos, Clases y Mensajes
+# 1 Objetos, Clases y Mensajes
 
 ## 1.1 Contenido
 
