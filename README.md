@@ -11,7 +11,9 @@ En este documento definimos y presentamos los contenidos conceptuales del curso 
 En este documento se incluye para cada concepto:
 
 - **Contenido**: Presentación del concepto. Usamos esta presentación en grado creciente de formalidad para trasladarte el concepto.
+
 - **Presentación**: Aspectos a tener en cuenta cuando veas este concepto.
+
 - **Lecturas sugeridas**: Artículos o capítulos de libros pertinentes al concepto que expanden algún aspecto o justifican alguna afirmación usada para trasladar este concepto.
 
 ## Antes que sigas leyendo
