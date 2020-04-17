@@ -3,7 +3,7 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 2 Tipos
+# 2. Tipos
 
 ## 2.3 Lecturas Sugeridas
 

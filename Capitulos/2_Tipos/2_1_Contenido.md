@@ -3,7 +3,7 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 2 Tipos
+# 2. Tipos
 
 ## 2.1 Contenido
 Los objetos colaboran pidiendo y prestando servicios mediante el envío mensajes. El objeto que envía el mensaje quiere consultar o cambiar el estado, o quiereactivar cierto comportamiento, del objeto que recibe
