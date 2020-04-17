@@ -27,7 +27,8 @@ namespace HelloWorld
 ```
 
 > ⚠️  **Nota**: <br/>La declaración `namespace` permite definir un espacio de nombre para los tipos definidos en el archivo de código fuente; es conveniente definir un espacio de nombres, pero no es obligatorio; en el código que puedes descargar de GitHub usamos espacios de nombre, pero en este documento lo omitimos por simplicidad.
-<br>La declaración del método de clase `Main` incluye los argumentos que se reciben en el programa de consola desde el sistema operativo; aquí los omitimos porque no los vamos a usar.
+> 
+>La declaración del método de clase `Main` incluye los argumentos que se reciben en el programa de consola desde el sistema operativo; aquí los omitimos porque no los vamos a usar.
 
 Aunque este programa imprime en la consola `"¡Hola Mundo!"`, no nos permite ver cómo es un programa orientado a objetos, pues no usa clases ni crea objetos como ocurre en un programa orientado a objetos<sup>6</sup>.
 
