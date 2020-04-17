@@ -1,6 +1,6 @@
 ![UCU](../../Assets/logo-ucu.png)
 
-[Conceptos de Programación Orientada a Objetos](../)
+[Conceptos de Programación Orientada a Objetos](../../)
 
 
 # 2 Tipos
