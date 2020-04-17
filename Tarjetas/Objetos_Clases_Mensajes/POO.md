@@ -1,8 +1,8 @@
 <table id="card">
     <tr>
-        <td align="center">
-            <h2>Programa Orientado a Objetos</h2>
-        </td>
+        <th align="center">
+            <h3>Programa Orientado a Objetos</h3>
+        </th>
     </tr>
     <tr>
         <td>
@@ -10,19 +10,3 @@
         </td>
     </tr>
 </table>
-
-<style>
-    #card {
-        margin-top: 20px;
-        border: 1px solid #999;
-    }
-    #card h2 {
-        margin: 0;
-    }
-    #card tr:first-child {
-        background: #eee;
-    }
-    #card td {
-        padding: 15px;
-    }
-</style>
