@@ -39,7 +39,7 @@ Cuando un objeto envía un mensaje a otro, el mensaje dice quién es el objeto *
 Un objeto puede colaborar con muchos otros en diferentes oportunidades. Cada una de estas colaboraciones puede requerir un contrato diferente. Por eso un objeto puede tener más de un tipo. Al mismo tiempo varios objetos pueden colaborar exactamente de la misma manera cuando prestan exactamente los mismos servicios. Por eso varios objetos aún de diferentes clases pueden tener el mismo tipo.
 
 ![Un_Objeto_Mas_De_Un_Tipo](../../Assets/tarjeta-objeto-tipos.png)
-![Un_Tipo_Mas_De_Un_Objeto](../../Assets/tarjeta-tipos-objetos.png)
+![Un_Tipo_Mas_De_Un_Objeto](../../Assets/tarjeta-tipo-objetos.png)
 
 Algunos lenguajes de programación tienen construcciones sintácticas particulares para la declaración explícita de tipos, es decir, independientemente de la declaración de clases. De todas formas, una clase siempre declara implícitamente un tipo, pues a todos los efectos puedo ver el conjunto de operaciones declarados en la clase, cuando veo solamente la forma de los métodos e ignoro su contenido.
 
