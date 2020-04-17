@@ -1,12 +1,12 @@
 <table id="card">
     <tr>
         <td align="center">
-            <h2>Programa Orientado a Objetos</h2>
+            <h2>Estado</h2>
         </td>
     </tr>
     <tr>
         <td>
-            En un programa orientado a objetos los datos y la lógica del programa están distribuidas en forma razonablemente equilibrada entre un conjunto de objetos que colaboran solicitándose y prestándose servicios mediante el envío de mensajes.
+            <p>Cada objeto puede tener la <b>responsabilidad de conocer</b> una parte de los <b>datos</b> del programa.</p><p>El <b>estado</b> de un objeto son los <b>datos</b> y los <b>valores de los datos</b> que el objeto <b>conoce</b> y están almacenados en los <b>atributos</b>.</p>
         </td>
     </tr>
 </table>
