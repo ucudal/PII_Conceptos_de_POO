@@ -8,10 +8,11 @@
 ## 2.3 Lecturas Sugeridas
 
 
+<br>
 
-<table style="width:100%">
-    <tr>
-        <td align="left"><a href="./2_2_Desarrollo.md">« 2.2 Desarrollo</a></td>
-        <td align="right"><a href="">3 Lecturas Sugeridas »</a></td>
-    </tr>
-</table>
+> [« 2.1 Contenido](./2_2_Desarrollo.md)
+
+
+> [3 ..... »](./2_3_Lecturas_Sugeridas.md)
+
+</br>

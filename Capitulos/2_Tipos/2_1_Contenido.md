@@ -73,12 +73,14 @@ Una operación es polimórfica cuando puede ser usada con diferentes tipos, es d
 ![Sobrecarga](../../Assets/tarjeta-sobrecarga.png)
 
 
-<table style="width:100%">
-    <tr>
-        <td align="left"><a href="../1_Objetos_Clases_Mensajes/1_4_Lecturas_Sugeridas.md">« 1.4. Lecturas sugeridas</a></td>
-        <td align="right"><a href="./2_2_Desarrollo.md">2.2 Desarrollo »</a></td>
-    </tr>
-</table>
+<br>
+
+> [« 1.4. Lecturas sugeridas](../1_Objetos_Clases_Mensajes/1_4_Lecturas_Sugeridas.md)
+
+
+> [2.2 Desarrollo »](./2_2_Desarrollo.md)
+
+</br>
 
 ****
 
