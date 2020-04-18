@@ -1,3 +1,5 @@
+![UCU](../../Assets/logo-ucu.png)
+
 [Conceptos de Programación Orientada a Objetos](../../)
 
 > [« Todas las Tarjetas](../)
