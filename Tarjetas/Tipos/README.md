@@ -12,7 +12,7 @@
 
 * [Firma](./Firma.md)
 
-* [Clases implementan tipos](./Clases_Implementan_Tipos.md.md)
+* [Clases implementan tipos](./Clases_Implementan_Tipos.md)
 
 * [Mensajes y métodos](./Mensajes_Y_Metodos.md)
 
