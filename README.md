@@ -57,6 +57,8 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
     
     2.3. [Lecturas sugeridas](./Capitulos/2_Tipos/2_3_Lecturas_Sugeridas.md)
 
+    1.5. [Tarjetas](./Tarjetas/Tipos/README.md)
+
 3. Tipos genéricos
 
     3.1. Contenido
