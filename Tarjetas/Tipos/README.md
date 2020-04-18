@@ -40,3 +40,4 @@
 
 * [Sobrecarga](./Sobrecarga.md)
 
+* [Principio de sustitución Liskov](./Liskov.md)
