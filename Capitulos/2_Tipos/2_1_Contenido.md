@@ -1,4 +1,4 @@
-![UCU](../../Tarjetas/Tipos/logo-ucu.md)
+![UCU](../../Assets/logo-ucu.png)
 
 [Conceptos de Programación Orientada a Objetos](../../)
 
