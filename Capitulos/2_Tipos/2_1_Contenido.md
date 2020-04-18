@@ -28,7 +28,7 @@ que los reciben, cómo solicitarlas, y qué ocurre cuando lo hacen <sup>1</sup>.
 
 La clase de un objeto que tiene un tipo cuenta con un método para todas y cada una de las operaciones contenidas en el tipo. La firma de cada método coincide exactamente con la de la operación correspondiente. En tal caso decimos que la clase **implementa** el tipo.
 
->[🗒 Tarjeta: Clases implementan tipos »](../../Tarjetas/Tipos/Clases_implementan_Tipos.md)
+>[🗒 Tarjeta: Clases implementan tipos »](../../Tarjetas/Tipos/Clases_Implementan_Tipos.md)
 
 >[🗒 Tarjeta: Mensajes y métodos »](../../Tarjetas/Tipos/Mensajes_Y_Metodos.md)
 
@@ -76,7 +76,7 @@ Una operación es polimórfica cuando puede ser usada con diferentes tipos, es d
 
 >[🗒 Tarjeta: Operación polimórfica »](../../Tarjetas/Tipos/Operacion_Polimorfica.md)
 
->[🗒 Tarjeta: Sobrecarga »](../../Tarjetas/Tipos/sobrecarga.md)
+>[🗒 Tarjeta: Sobrecarga »](../../Tarjetas/Tipos/Sobrecarga.md)
 
 
 <br>
