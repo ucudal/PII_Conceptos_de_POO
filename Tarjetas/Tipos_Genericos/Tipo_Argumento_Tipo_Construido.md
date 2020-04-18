@@ -1,7 +1,7 @@
 <table id="card">
     <tr>
         <td align="center">
-            <h3>Clase</h3>
+            <h3>Tipo argumento y tipo construido</h3>
         </td>
     </tr>
     <tr>

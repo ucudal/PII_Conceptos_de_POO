@@ -59,11 +59,13 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     2.4. [Tarjetas](./Tarjetas/Tipos/README.md)
 
-3. Tipos genéricos
+3. [Tipos genéricos](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md#1-tipos-genéricos)
 
-    3.1. Contenido
+    3.1. [Contenido](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md)
 
-    3.2. Desarrollo
+    3.2. [Desarrollo](./Capitulos/3_Tipos_Genericos/3_2_Desarrollo.md)
+
+    3.3. [Tarjetas](./Tarjetas/Tipos_Genericos/README.md)
 
 4. Programar contra especificaciones
 
