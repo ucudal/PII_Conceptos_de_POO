@@ -67,15 +67,17 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     3.3. [Tarjetas](./Tarjetas/Tipos_Genericos/README.md)
 
-4. Programar contra especificaciones
+4. [Programar contra especificaciones](./Capitulos/4_Programar_Contra_Especificaciones/4_1_Diseño_Por_Contrato.md#4-programar-contra-especificaciones)
 
-    4.1. Diseño por contrato
+    4.1. [Diseño por contrato](./Capitulos/4_Programar_Contra_Especificaciones/4_1_Diseño_Por_Contrato.md)
 
-    4.2. Excepciones
+    4.2. [Excepciones](Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md)
 
     4.3. Desarrollo
 
     4.4.Lecturas sugeridas
+
+    4.5. [Tarjetas](./Tarjetas/Programar_Contra_Especificaciones/README.md)
 
 5. Herencia-agregación
 
