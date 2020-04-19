@@ -15,4 +15,4 @@ Martin, Robert, The Open-Closed Principle, The C++ Report, Enero 1996.
 
 <br/>
 
-> [6. Composición-delegación »](../Composicion_Delegacion/6_1_Contenido.md)
+> [6. Composición-delegación »](../6_Composicion_Delegacion/6_1_Contenido.md)
