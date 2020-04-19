@@ -18,4 +18,4 @@ Adicionalmente, estas son otras lecturas que amplían sobre el tema:
 
 <br/>
 
-> [2 Tipos »](../2_Tipos/2_1_Contenido.md)
+> [2. Tipos »](../2_Tipos/2_1_Contenido.md)

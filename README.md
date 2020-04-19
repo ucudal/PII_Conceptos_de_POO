@@ -79,13 +79,13 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     4.5. [Tarjetas](./Tarjetas/Programar_Contra_Especificaciones/README.md)
 
-5. Herencia-agregación
+5. [Herencia-agregación](./Capitulos/5_Herencia_Agregacion/5_1_Contenido.md#5-herencia-agregación)
 
-    5.1. Contenido
+    5.1. [Contenido](./Capitulos/5_Herencia_Agregacion/5_1_Contenido.md)
 
-    5.2. Desarrollo
+    5.2. [Desarrollo](./Capitulos/5_Herencia_Agregacion/5_2_Desarrollo.md)
 
-    5.3. Lecturas sugeridas
+    5.3. [Lecturas sugeridas](./Capitulos/5_Herencia_Agregacion/5_3_Lecturas_Sugeridas.md)
 
 6. Composición-delegación
 
