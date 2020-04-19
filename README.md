@@ -71,11 +71,11 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     4.1. [Diseño por contrato](./Capitulos/4_Programar_Contra_Especificaciones/4_1_Diseño_Por_Contrato.md)
 
-    4.2. [Excepciones](Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md)
+    4.2. [Excepciones](./Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md)
 
-    4.3. Desarrollo
+    4.3. [Desarrollo](./Capitulos/4_Programar_Contra_Especificaciones/4_3_Desarrollo.md)
 
-    4.4.Lecturas sugeridas
+    4.4. [Lecturas sugeridas](./Capitulos/4_Programar_Contra_Especificaciones/4_4_Lecturas_Sugeridas.md)
 
     4.5. [Tarjetas](./Tarjetas/Programar_Contra_Especificaciones/README.md)
 
