@@ -32,4 +32,4 @@
 
 * [Violación de afirmación](./Violacion_Afirmacion.md)
 
-* [Excepción](./Excepcion.md.md)
+* [Excepción](./Excepcion.md)
