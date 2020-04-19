@@ -87,12 +87,14 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     5.3. Lecturas sugeridas
 
-6. Composición-delegación
+6. [Composición-delegación](./Capitulos/6_Composicion_Delegacion/6_1_Contenido.md#6-composición-delegación)
 
-    6.1. Contenido
+    6.1. [Contenido](./Capitulos/6_Composicion_Delegacion/6_1_Contenido.md)
 
-    6.2. Presentación
+    6.2. [Presentación](./Capitulos/6_Composicion_Delegacion/6_2_Presentacion.md)
 
-    6.3. Lecturas Sugeridas
+    6.3. [Lecturas Sugeridas](./Capitulos/6_Composicion_Delegacion/6_3_Lecturas_Sugeridas.md)
+
+    6.4. [Tarjetas](./Tarjetas/Composicion_Delegacion/README.md)
 
 7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia) 
