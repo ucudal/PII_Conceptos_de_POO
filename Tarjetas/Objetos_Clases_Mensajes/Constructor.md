@@ -11,19 +11,3 @@
         </td>
     </tr>
 </table>
-
-<style>
-    #card {
-        margin-top: 20px;
-        border: 1px solid #999;
-            }
-    #card h2 {
-        margin: 0;
-            }
-    #card tr:first-child {
-        background: #eee;
-            }
-    #card td {
-        padding: 15px;
-            }
-</style>
