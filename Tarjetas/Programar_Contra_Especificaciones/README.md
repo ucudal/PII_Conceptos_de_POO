@@ -31,3 +31,5 @@
 * [Corrección](./Correccion.md)
 
 * [Violación de afirmación](./Violacion_Afirmacion.md)
+
+* [Excepción](./Excepcion.md.md)
