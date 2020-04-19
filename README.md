@@ -95,4 +95,4 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     6.3. Lecturas Sugeridas
 
-7. Bibliografía
+7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia) 
