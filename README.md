@@ -44,8 +44,6 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     1.4. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/1_4_Lecturas_Sugeridas.md)
 
-    1.5. [Tarjetas](./Tarjetas/Objetos_Clases_Mensajes/README.md)
-
 2. [Tipos](./Capitulos/2_Tipos/2_1_Contenido.md#2-tipos)
 
     2.1. [Contenido](./Capitulos/2_Tipos/2_1_Contenido.md)
@@ -54,15 +52,11 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
     
     2.3. [Lecturas sugeridas](./Capitulos/2_Tipos/2_3_Lecturas_Sugeridas.md)
 
-    2.4. [Tarjetas](./Tarjetas/Tipos/README.md)
-
 3. [Tipos genéricos](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md#1-tipos-genéricos)
 
     3.1. [Contenido](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md)
 
     3.2. [Desarrollo](./Capitulos/3_Tipos_Genericos/3_2_Desarrollo.md)
-
-    3.3. [Tarjetas](./Tarjetas/Tipos_Genericos/README.md)
 
 4. [Programar contra especificaciones](./Capitulos/4_Programar_Contra_Especificaciones/4_1_Diseño_Por_Contrato.md#4-programar-contra-especificaciones)
 
@@ -73,8 +67,6 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
     4.3. [Desarrollo](./Capitulos/4_Programar_Contra_Especificaciones/4_3_Desarrollo.md)
 
     4.4. [Lecturas sugeridas](./Capitulos/4_Programar_Contra_Especificaciones/4_4_Lecturas_Sugeridas.md)
-
-    4.5. [Tarjetas](./Tarjetas/Programar_Contra_Especificaciones/README.md)
 
 5. [Herencia-agregación](./Capitulos/5_Herencia_Agregacion/5_1_Contenido.md#5-herencia-agregación)
 
@@ -91,7 +83,5 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
     6.2. [Presentación](./Capitulos/6_Composicion_Delegacion/6_2_Presentacion.md)
 
     6.3. [Lecturas Sugeridas](./Capitulos/6_Composicion_Delegacion/6_3_Lecturas_Sugeridas.md)
-
-    6.4. [Tarjetas](./Tarjetas/Composicion_Delegacion/README.md)
 
 7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia) 

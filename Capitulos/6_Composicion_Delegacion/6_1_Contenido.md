@@ -11,21 +11,70 @@ Puede llegar a haber métodos iguales o muy parecidos en una clase que estamos p
 
 Agrego a los objetos de la clase que debe implementar el tipo, objetos de una segunda clase que ya tenga el tipo implementado, o creo una segunda clase sólo a efectos de contener esos métodos; esto es llamado **composición**.
 
-> [🗒 Tarjeta: Composición »](../../Tarjetas/Composicion_Delegacion/Composicion.md)
+<details>
+<summary>🗒 Tarjeta: Composición »</summary>
+
+| Composición |
+| ---- |
+| La composición es una asociación fuerte entre una clase compuesta y una clase componente en la que instancias de la clase componente no suelen existir independiente de instancias de la clase compuesta. |
+
+</details>
+<br/>
 
 Cada método de la primera clase envía un mensaje al objeto de la segunda; esto es conocido como **delegación**.
 
-> [🗒 Tarjeta: Delegación »](../../Tarjetas/Composicion_Delegacion/Delegacion.md)
+<details>
+<summary>🗒 Tarjeta: Delegación »</summary>
+
+| Delegación |
+| ---- |
+| La delegación es un mecanismo en programación por el cual cuando un objeto recibe un mensaje para realizar una operación, no la realiza él mismo, si no que la encarga a otro objeto. |
+| Este otro objeto suele ser un objeto compuesto |
+
+</details>
+<br/>
 
 La clase compuesta sólo necesita conocer el tipo de la clase componente para poder hacer la delegación. La composición y delegación permiten reutilizar código basándose exclusivamente en los tipos de los objetos.
 
-> [🗒 Tarjeta: Composición y reutilización »](../../Tarjetas/Composicion_Delegacion/Composicion_Reutilizacion.md)
+<details>
+<summary>🗒 Tarjeta: Composición y reutilización »</summary>
 
-> [🗒 Tarjeta: Composición vs. herencia »](../../Tarjetas/Composicion_Delegacion/Composicion_Vs_Herencia.md)
+| Composición y reutilización |
+| ---- |
+| La composición y delegación es una forma de reutilización de código pues permite crear nuevas clases a partir de clases existentes. |
+
+</details>
+<br/>
+
+<details>
+<summary>🗒 Tarjeta: Composición vs. herencia »</summary>
+
+| Composición vs. herencia |
+| ---- |
+| La composición y delegación es una alternativa a la herencia. |
+| En el contexto de la reutilización toda implementación que use herencia se puede cambiar por una equivalent e que use composición y delegación. |
+
+</details>
+<br/>
 
 Es posible cambiar el comportamiento de una clase compuesta, cambiando la clase componente. Esto se puede lograr aún dinámicamente.
 
-> [🗒 Tarjeta: Composición vs. herencia »](../../Tarjetas/Composicion_Delegacion/Composicion_Vs_Herencia_Comparacion.md)
+<details>
+<summary>🗒 Tarjeta: Composición vs Herencia »</summary>
+
+| Composición | Herencia |
+| :----: | :----: |
+| Caja negra | Caja blanca |
+| Dinámica | Estática |
+| Ejecución | Compilación |
+| Por código | Declarativa |
+| Más código | Menos código |
+| Reuso selectivo | Reuso todo o nada |
+| 1 o más clases | 1 clase (simple) |
+| Tipos sin relación | Impone subtipo |
+
+</details>
+<br/>
 
 | Composición y delegación | Herencia |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,11 +89,37 @@ La composición reduce las dependencias indeseables, porque require sólo de la 
 
 Por estas razones decimos que la composición favorece la modularidad. La modularidad es la propiedad de un sistema que ha sido descompuesto en un conjunto de módulos altamente cohesivos y poco acoplados.
 
-> [🗒 Tarjeta: Cohesión »](../../Tarjetas/Composicion_Delegacion/Cohesion.md)
+<details>
+<summary>🗒 Tarjeta: Cohesión »</summary>
 
-> [🗒 Tarjeta: Acoplamiento »](../../Tarjetas/Composicion_Delegacion/Acoplamiento.md)
+| Cohesión |
+| ---- |
+| La cohesión es la forma y el grado en el que las responsabili dadesde una clase o de las clases contenidas en un paquete están relacionas unas con otras. |
+| Cuando la cohesión es alta es mejor. |
 
-> [🗒 Tarjeta: Modularidad »](../../Tarjetas/Composicion_Delegacion/Modularidad.md)
+</details>
+<br/>
+
+<details>
+<summary>🗒 Tarjeta: Acoplamiento »</summary>
+
+| Acoplamiento |
+| ---- |
+| El acoplamient o es la forma y el grado de interdependencia entre clases y entre paquetes. |
+| Cuando el acoplamiento es bajo es mejor. |
+
+</details>
+<br/>
+
+<details>
+<summary>🗒 Tarjeta: Modularidad »</summary>
+
+| Modularidad |
+| ---- |
+| La modularidad es una propiedad de las clases y paquetes cuando son altamente cohesivos y están poco acoplados. |
+
+</details>
+<br/>
 
 
 <br/>
