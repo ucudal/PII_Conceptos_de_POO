@@ -17,51 +17,30 @@ Para evitar este tipo de errores, es posible utilizar **tipos genéricos**. En �
 
 <details>
   <summary>🗒 Tarjeta: Genéricos »</summary>
-<table id="card">
-    <tr>
-        <td align="center">
-            <h3>Genéricos</h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p>Los genéricos son un <b>mecanismo</b> de los lenguajes de programación para implementar <b>declarativamente</b> relaciones de <b>generalización</b> entre un tipo base y uno o más tipos mediante el uso de <b>tipos parámetro</b>.</p>
-        </td>
-    </tr>
-</table>
+  
+  |Genéricos|
+  |---|
+  |Los genéricos son un **mecanismo** de los lenguajes de programación para implementar **declarativamente** relaciones de **generalización** entre un tipo base y uno o más tipos mediante el uso de **tipos parámetro**.|
+  
 </details>
 
 <details>
   <summary>🗒 Tarjeta: Tipo genérico y tipo parámetro »</summary>
-<table id="card">
-    <tr>
-        <td align="center">
-            <h3>Tipo genérico y tipo parámetro</h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p>Un <b>tipo genérico</b> es un tipo que se define en términos de otro <b>tipo parámetro</b>.</p>
-        </td>
-    </tr>
-</table>
+  
+  |Tipo genérico y tipo parámetro|
+  |---|
+  |Un **tipo genérico** es un tipo que se define en términos de otro **tipo parámetro**.|
+  
 </details>
 
 <details>
   <summary>🗒 Tarjeta: Tipo argumento y tipo construido »</summary>
-<table id="card">
-    <tr>
-        <td align="center">
-            <h3>Tipo argumento y tipo construido</h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p>Cuando se <b>declara</b> una variable o parámetro de un tipo genérico se provee un <b>tipo argumento</b>.</p>
-            <p>Al tipo asi declarado se le llama <b>tipo construido</b>.</p>
-        </td>
-    </tr>
-</table>
+  
+  |Tipo argumento y tipo construido|
+  |---|
+  |Cuando se **declara** una variable o parámetro de un tipo genérico se provee un **tipo argumento**. 
+  |Al tipo asi declarado se le llama **tipo construido**.|
+  
 </details>
 
 El uso de genéricos provee lo que se conoce como **polimorfismo paramétrico**, al permitir usar una misma declaración de distinta forma en base a un parámetro especificado al momento de utilizarla. Siguiendo con el ejemplo anterior, la declaración de la clase lista puede ser parametrizada con el tipo de objeto contenido al momento de definir una nueva lista. 
