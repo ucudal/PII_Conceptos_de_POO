@@ -31,11 +31,38 @@ Para evitar este tipo de errores, es posible utilizar **tipos genéricos**. En �
 </table>
 </details>
 
-> [🗒 Tarjeta: Genéricos »](../../Tarjetas/Tipos_Genericos/Genericos.md)
+<details>
+  <summary>🗒 Tarjeta: Tipo genérico y tipo parámetro »</summary>
+<table id="card">
+    <tr>
+        <td align="center">
+            <h3>Tipo genérico y tipo parámetro</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Un <b>tipo genérico</b> es un tipo que se define en términos de otro <b>tipo parámetro</b>.</p>
+        </td>
+    </tr>
+</table>
+</details>
 
-> [🗒 Tarjeta: Tipo genérico y tipo parámetro »](../../Tarjetas/Tipos_Genericos/Tipo_Generico_Tipo_Parametro.md)
-
-> [🗒 Tarjeta: Tipo argumento y tipo construido »](../../Tarjetas/Tipos_Genericos/Tipo_Argumento_Tipo_Construido.md)
+<details>
+  <summary>🗒 Tarjeta: Tipo argumento y tipo construido »</summary>
+<table id="card">
+    <tr>
+        <td align="center">
+            <h3>Tipo argumento y tipo construido</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Cuando se <b>declara</b> una variable o parámetro de un tipo genérico se provee un <b>tipo argumento</b>.</p>
+            <p>Al tipo asi declarado se le llama <b>tipo construido</b>.</p>
+        </td>
+    </tr>
+</table>
+</details>
 
 El uso de genéricos provee lo que se conoce como **polimorfismo paramétrico**, al permitir usar una misma declaración de distinta forma en base a un parámetro especificado al momento de utilizarla. Siguiendo con el ejemplo anterior, la declaración de la clase lista puede ser parametrizada con el tipo de objeto contenido al momento de definir una nueva lista. 
 
