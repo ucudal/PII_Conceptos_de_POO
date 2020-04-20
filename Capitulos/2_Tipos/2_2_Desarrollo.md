@@ -222,7 +222,15 @@ Por ejemplo, puedo crear una página web que permita dar y quitar :+1: a un **IL
 
 Esta es una aplicación del principio de sustitución anunciado anteriormente. El principio fue enunciado por Bárbara Liskov en estos términos:
 
->[🗒 Tarjeta: Liskov »](../../Tarjetas/Tipos/Liskov.md)
+<details>
+<summary>🗒 Tarjeta: Principio de sustitución en la redacción de Liskov »</summary>
+
+| Principio de sustitución en la redacción de Liskov |
+| ---- |
+| Si para cada objeto O de tipo S existe un objeto O' de tipo T tal que para todos los programas P definidos en términos de T, el comportamiento de P permanece sin cambios cuando O es substituido por O', entonces S es un subtipo de T. |
+
+</details>
+<br/>
 
 En nuestro caso, T sería **ILikeable**, y los subtipos S serían **Car** y **Actor**.
 
