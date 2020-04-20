@@ -15,6 +15,23 @@ Además, si el contenedor contiene cualquier tipo de objeto -es decir, objetos d
 
 Para evitar este tipo de errores, es posible utilizar **tipos genéricos**. En éstos, es posible declarar sobre qué tipo o tipos va a operar el tipo genérico, de forma de poder realizar los controles de tipos necesarios. Por ejemplo, podría decir que una lista es un tipo genérico y al momento de construirla declarar el tipo de objetos que la lista va a contener. Esto permite que luego el compilador pueda controlar que los objetos agregados en esta lista sean del tipo correcto y evitar hacer un _typecast_ al acceder a uno de ellos.
 
+<details>
+  <summary>[🗒 Tarjeta: Genéricos »]</summary>
+<table id="card">
+    <tr>
+        <td align="center">
+            <h3>Genéricos</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Los genéricos son un <b>mecanismo</b> de los lenguajes de programación para implementar <b>declarativamente</b> relaciones de <b>generalización</b> entre un tipo base y uno o más tipos mediante el uso de <b>tipos parámetro</b>.</p>
+        </td>
+    </tr>
+</table>
+
+</details>
+
 > [🗒 Tarjeta: Genéricos »](../../Tarjetas/Tipos_Genericos/Genericos.md)
 
 > [🗒 Tarjeta: Tipo genérico y tipo parámetro »](../../Tarjetas/Tipos_Genericos/Tipo_Generico_Tipo_Parametro.md)
