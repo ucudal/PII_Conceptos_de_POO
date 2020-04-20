@@ -28,7 +28,17 @@ También puede aparecer un error en nuestro programa que inadvertidamente es una
 
 La decisión de si un error es una excepción o no depende del contexto, la toma el objeto que envía el mensaje. Siguiendo con el ejemplo de un programa que usa un archivo, la clase que usamos para abrirlo va a generar una excepción si el archivo no existe, nuestro programa es el que decide pedir nuevamente su ubicación.
 
-> [🗒 Tarjeta: Excepción »](../../Tarjetas/Programar_Contra_Especificaciones/Excepcion.md)
+<details>
+<summary>🗒 Tarjeta: Excepción »</summary>
+
+| Excepción |
+| ---- |
+| Una excepción es una situación inesperada en un programa. |
+| No necesariamente es un error en el programa. |
+| No necesariamente es un error permanente. |
+
+</details>
+<br/>
 
 Podríamos decir que todas las excepciones son violaciones de precondiciones, postcondiciones o invariantes. Lo que sucede es que a veces es impráctico especificar absolutamente todas las precondiciones, postcondiciones o invariantes, por eso se controla solamente la corrección de una parte del código con excepciones. Otro aspecto es que a veces es necesario detectar una excepción para poder manejarla, como en el caso del
 archivo que no existe del ejemplo anterior.
