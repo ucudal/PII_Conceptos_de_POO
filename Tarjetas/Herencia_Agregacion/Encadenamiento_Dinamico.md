@@ -1,3 +1,5 @@
+<details>
+  <summary>🗒  »</summary>
 <table id="card">
     <tr>
         <td align="center">
@@ -10,4 +12,5 @@
         </td>
     </tr>
 </table>
+</details>
 

@@ -2,8 +2,6 @@
 
 # Tarjetas
 
-1. [Objetos, Clases y Mensajes](./Objetos_Clases_Mensajes/README.md)
-
 2. [Tipos](./Tipos/README.md)
 
 3. [Tipos Genéricos](./Tipos_Genericos/README.md)
