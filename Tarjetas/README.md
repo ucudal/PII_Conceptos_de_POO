@@ -2,8 +2,6 @@
 
 # Tarjetas
 
-2. [Tipos](./Tipos/README.md)
-
 3. [Tipos Genéricos](./Tipos_Genericos/README.md)
 
 4. [Programar contra especificaciones](./Programar_Contra_Especificaciones/README.md)
