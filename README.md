@@ -2,9 +2,6 @@
 # Conceptos de Programación Orientada a Objetos
 ## FIT - Universidad Católica del Uruguay
 
-
-_Última actualización: 17 de Abril de 2020_
-
 <br/>
 
 En este documento definimos y presentamos los contenidos conceptuales del curso de Programación II sobre programación orientada a objetos. Estos contenidos conceptuales están alineados con las competencias a desarrollar durante el curso. Esas competencias a desarrollar en el curso y sus indicadores de logro están en el documento Syllabus.
