@@ -14,7 +14,7 @@ No hay solo un lugar donde se concentren los datos y la lógica del programa, si
 <details>
 <summary>🗒 Tarjeta: Programa Orientado a Objetos »</summary>
 
-| <center>Programa Orientado a Objetos</center> |
+| Programa Orientado a Objetos |
 | ---- |
 | En un programa orientado a objetos los **datos** y la **lógica** del programa están **distribuidas** en forma razonablemente **equilibrada** entre un conjunto de objetos que **colaboran** solicitándose y prestándose servicios mediante el envío de **mensajes**. |
 
@@ -27,7 +27,7 @@ Esto significa que cada objeto tiene una parte de los datos y una parte de la l�
 <details>
 <summary>🗒 Tarjeta: Estado »</summary>
 
-| <center>Estado</center> |
+| Estado |
 | ---- |
 | Cada objeto puede tener la **responsabilidad de conocer** una parte de los **datos** del programa. |
 | El **estado** de un objeto son los **datos** y los **valores** de los datos que el objeto **conoce** y están almacenados en los **atributos**. |
@@ -39,7 +39,7 @@ Esto significa que cada objeto tiene una parte de los datos y una parte de la l�
 <details>
 <summary>🗒 Tarjeta: Comportamiento »</summary>
 
-| <center>Comportamiento</center> |
+| Comportamiento |
 | --- |
 | Cada objeto puede tener la **responsabilidad** de hacer una parte de la lógica del programa. |
 | El **comportamiento** de un objeto son las cosas que el objeto **hace** y está implementado en los **métodos**. |
@@ -53,7 +53,7 @@ Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden ún
 <details>
 <summary>🗒 Tarjeta: Mensaje »</summary>
 
-| <center>Mensaje</center> |
+| Mensaje |
 | ---- |
 | Los objetos se comunican mediante el envío **mensajes**. |
 | El objeto que **emisor** del mensaje quiere consultar o cambiar el **estado** o quiere ejecutar cierto **comportamiento** del objeto **receptor** del mensaje |
@@ -65,7 +65,7 @@ Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden ún
 <details>
 <summary>🗒 Tarjeta: Selector »</summary>
 
-| <center>Selector</center> |
+| Selector |
 | ---- |
 | El **selector** de un mensaje es el nombre del **método** que el emisor desea que el receptor ejecute cuando reciba el mensaje. |
 
@@ -82,7 +82,7 @@ La encapsulación es el mecanismo que permite integrar en una misma unidad -el o
 <details>
 <summary>🗒 Tarjeta: Encapsulación »</summary>
 
-| <center>Encapsulación</center> |
+| Encapsulación |
 | ---- |
 | La **encapsulación** es el resultado de ocultar todos los detalles acerca de la implementación de las responsabilidades. |
 | Es sinónimo de **escondimiento de información**. |
@@ -94,7 +94,7 @@ La encapsulación es el mecanismo que permite integrar en una misma unidad -el o
 <details>
 <summary>🗒 Tarjeta: Público/Privado »</summary>
 
-| <center>Público/Privado</center> |
+| Público/Privado |
 | ---- |
 | Un método o atributo **público** es accesible a cualquier objeto de cualquier clase. |
 | Un método o atributo **privado** es accesible sólo a los objetos de la clase en la que se define ese método o atributo. |
@@ -108,7 +108,7 @@ Los objetos con los mismos atributos y métodos son producidos con el mismo mold
 <details>
 <summary>🗒 Tarjeta: Clase »</summary>
 
-| <center>Clase</center> |
+| Clase |
 | ---- |
 | Una **clase** es una **plantilla** o **molde** para un conjunto de objetos que comparten los mismos atributos, métodos, relaciones y semántica. |
 | Un objeto es una **instancia** de una clase. |
@@ -122,7 +122,7 @@ Siempre es posible reconocer un objeto de otro, aunque luzcan **iguales**, es de
 <details>
 <summary>🗒 Tarjeta: Igualdad »</summary>
 
-| <center>Igualdad</center> |
+| Igualdad |
 | ---- |
 | Dos objetos son **iguales** cuando son de la **misma clase** y tienen los **mismos valores** de atributos. |
 
@@ -133,7 +133,7 @@ Siempre es posible reconocer un objeto de otro, aunque luzcan **iguales**, es de
 <details>
 <summary>🗒 Tarjeta: Identidad »</summary>
 
-| <center>Identidad</center> |
+| Identidad |
 | ---- |
 | La **identidad** es el carácter propio y diferenciado de un objeto que denota una existencia separada de los demás, aunque pueda tener los mismos atributos y valores de atributos que otros objetos. |
 
@@ -150,7 +150,7 @@ Por ejemplo, el mensaje para crear un nuevo objeto no puede ser enviado a un obj
 <details>
 <summary>🗒 Tarjeta: Constructor »</summary>
 
-| <center>Constructor</center> |
+| Constructor |
 | ---- |
 | El **constructor** es un método de clase para **crear** e **inicializar** nuevas instancias de esa clase. |
 
