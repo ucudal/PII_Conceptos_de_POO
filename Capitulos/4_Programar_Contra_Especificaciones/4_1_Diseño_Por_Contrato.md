@@ -107,9 +107,9 @@ Además de precondiciones y postcondiciones para especificar una operación, es 
 <details>
 <summary>🗒 Tarjeta: Invariante [de tipo | clase] »</summary>
 
-| Invariante [de tipo | clase] |
+| Invariante [de tipo/clase] |
 | ---- |
-| <b>Una invariante</b> es una <b>afirmación</b> asociada a un <b>tipo</b> que debe ser satisfecha por los objetos de ese tipo durante toda su existencia. |
+| Una **invariante** es una **afirmación** asociada a un **tipo** que debe ser satisfecha por los objetos de ese tipo durante toda su existencia. |
 
 </details>
 <br/>
