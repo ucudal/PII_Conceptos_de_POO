@@ -375,7 +375,7 @@ Es importante notar que el encadenamiento dinámico no solo se utiliza cuando se
 
 Sin el mecanismo de encadenamiento dinámico, el compilador debería determinar el código a ejecutar en tiempo de compilación y se perdería el polimorfismo. Si siempre se ejecuta el mismo código en cada llamada, no importa si variamos la instancia del objeto pasado por parámetro, siempre sucederá lo mismo. Este tipo de sistemas son llamados monomórficos. 
 
-Los métodos que se encadenan dinámicamente reciben distintos nombres en distintos lenguajes. En C# y C++ por ejemplo, se llaman métodos virtuales y se definen con la palabra clave virtual. En el caso de Java, todos los métodos son por defecto encadenados dinámicamente.  
+Los métodos que se encadenan dinámicamente reciben distintos nombres en distintos lenguajes. En C# y C++ por ejemplo, se llaman métodos virtuales y se definen con la palabra clave `virtual`. En el caso de Java, todos los métodos son por defecto encadenados dinámicamente. 
 
 Lo contrario a encadenamiento dinámico es encadenamiento estático o temprano. En este caso, el código que se va a ejecutar está definido al momento de compilar. Dado que el código se determina al momento de compilación, siempre se va a ejecutar el mismo fragmento de código. Por lo cual, independientemente de si el método encadenado estáticamente es llamado sobre un `CD` o un `DVD`, el código ejecutado es siempre el mismo.  
 
