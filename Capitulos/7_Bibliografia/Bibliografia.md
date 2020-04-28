@@ -1,6 +1,6 @@
 ![UCU](../../Assets/logo-ucu.png)
 
-[Conceptos de Programación Orientada a Objetos](../../)
+[Conceptos de Programación Orientada a Objetos](https://github.com/ucudal/PII_Conceptos_De_POO)
 
 
 # 7. Bibliografía
