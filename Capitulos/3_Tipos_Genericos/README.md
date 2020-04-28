@@ -1,4 +1,4 @@
-## 2. Tipos Genéricos
+## 3. Tipos Genéricos
 
 3.1. [Contenido](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md)
 
