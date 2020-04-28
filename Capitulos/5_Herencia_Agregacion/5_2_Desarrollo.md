@@ -383,9 +383,9 @@ Lo contrario a encadenamiento dinámico es encadenamiento estático o temprano. 
 
 ¿Para que existe entonces el encadenamiento estático? Existen una serie de ventajas el estático con respecto al dinámico. Primero, es más rápido debido a que en el dinámico es necesario resolver que método ejecutar mientras se está ejecutando el programa. Si pensamos en una clase que tiene diez ancestras podríamos tener que realizar una búsqueda muy larga para identificar que método realmente tengo que ejecutar (dependiendo de qué clase de esas diez es la última en definir el método). Segundo, podemos saber exactamente que método se va a ejecutar, con lo cual no tenemos incertidumbre con respecto a que va a suceder. Esta ventaja pierde peso si seguimos algunas buenas prácticas, como veremos más adelante. 
 
-En C#, los métodos son normalmente encadenados estáticamente, excepto que se definan como virtuales. En Java, es necesario utilizar la palabra clave final para que el método se resuelva de forma estática. 
+En C#, los métodos son normalmente encadenados estáticamente, excepto que se definan como virtuales. En Java, es necesario utilizar la palabra clave `final` para que el método se resuelva de forma estática. 
 
-Es claro que, si para identificar el código de un método definido con encadenamiento estático que se va a ejecutar el compilador solo toma en cuenta el tipo bajo el cual está definido la variable y el selector del método, no es posible sobreescribir un método estático en otra clase. La sobreescritura en estos casos no se permite o se crea un nuevo método (que no sobrescribiría el método de la clase anterior como sucede en el caso de encadenamiento dinámico). 
+Es claro que, si para identificar el código de un método definido con encadenamiento estático que se va a ejecutar el compilador sólo toma en cuenta el tipo bajo el cual está definido la variable y el selector del método, no es posible sobreescribir un método estático en otra clase. La sobreescritura en estos casos no se permite o se crea un nuevo método (que no sobrescribiría el método de la clase anterior como sucede en el caso de encadenamiento dinámico). 
 
 <br/>
 
