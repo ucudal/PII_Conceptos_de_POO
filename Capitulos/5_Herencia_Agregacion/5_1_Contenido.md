@@ -43,7 +43,7 @@ La herencia genera ilusión de simplicidad: no es necesario repetir en la clase 
 
 | Clase base |
 | ---- |
-| En una relación de generalización la <b>clase base</b> es la <b>especialización</b> de otra clase. |
+| En una relación de generalización la <b>clase base</b> es la <b>generalización</b> de otra clase. |
 | Tambien <b>clase ancestra</b> o <b>superclase</b> son usados como sinónimo de clase base. |
 
 </details>
@@ -54,7 +54,7 @@ La herencia genera ilusión de simplicidad: no es necesario repetir en la clase 
 
 | Clase sucesora |
 | ---- |
-| En una relación de generalización la <b>clase sucesora</b> es la <b>generalización</b> de otra clase. |
+| En una relación de generalización la <b>clase sucesora</b> es la <b>especialización</b> de otra clase. |
 | Tambien <b>clase derivada</b> o <b>subclase</b> son usados como sinónimo de clase sucesora. |
 
 </details>
