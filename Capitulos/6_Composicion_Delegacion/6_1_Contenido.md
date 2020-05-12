@@ -105,7 +105,7 @@ Por estas razones decimos que la composición favorece la modularidad. La modula
 
 | Acoplamiento |
 | ---- |
-| El acoplamient o es la forma y el grado de interdependencia entre clases y entre paquetes. |
+| El acoplamiento es la forma y el grado de interdependencia entre clases y entre paquetes. |
 | Cuando el acoplamiento es bajo es mejor. |
 
 </details>
