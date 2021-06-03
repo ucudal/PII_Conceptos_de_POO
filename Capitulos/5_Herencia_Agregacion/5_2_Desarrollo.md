@@ -38,7 +38,7 @@ namespace Herencia
             } 
             set 
             { 
-                genero nombre = value; 
+                nombre = value; 
             } 
         } 
  
