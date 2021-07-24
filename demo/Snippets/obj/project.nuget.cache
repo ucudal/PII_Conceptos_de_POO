@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "jpuSx084TW2NS5FGAcqn6N7x7SpzyltthRQcizFi9tbi5j+kd8XAh5e6rWU7j9jnHgB9cejyHGL0kDWqfo5Hnw==",
+  "success": false,
+  "projectFilePath": "\\\\wsl$\\Ubuntu-20.04\\home\\fernando\\source\\repos\\PII_Conceptos_de_POO\\demo\\Snippets\\Snippets.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'System.CommandLine.DragonFruit (>= 0.3.0-alpha.20309.1)' for '.NETCoreApp,Version=v3.1'.",
+      "libraryId": "System.CommandLine.DragonFruit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'System.CommandLine (>= 2.0.0-beta1.20359.2)' for '.NETCoreApp,Version=v3.1'.",
+      "libraryId": "System.CommandLine",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.App.Ref (= 3.1.10)' for '.NETCoreApp,Version=v3.1'.",
+      "libraryId": "Microsoft.AspNetCore.App.Ref",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NETCore.App.Host.win-x64 (= 3.1.17)' for '.NETCoreApp,Version=v3.1'.",
+      "libraryId": "Microsoft.NETCore.App.Host.win-x64",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
