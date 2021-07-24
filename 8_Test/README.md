@@ -1,4 +1,8 @@
-:::code source="PowerShell.ps1" interactive="cloudshell-powershell":::
+:::code source="https://github.com/ucudal/PII_ProjectTemplate/blob/master/src/ConsoleApplication/Program.cs" interactive="csharp-interactive":::
+
+```csharp-interactive
+Console.WriteLine("Hello World!");
+```
 
 
 ```json
