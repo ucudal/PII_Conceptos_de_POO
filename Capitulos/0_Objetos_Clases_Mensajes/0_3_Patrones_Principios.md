@@ -31,7 +31,7 @@ El texto de las palabras de una frase podría estar en la clase `Phrase`. Podrí
 
 <br/>
 
-> [0.4 Lecturas sugeridas »](./1_4_Lecturas_Sugeridas.md)
+> [0.4 Lecturas sugeridas »](./0_4_Lecturas_Sugeridas.md)
 
 <br/>
 

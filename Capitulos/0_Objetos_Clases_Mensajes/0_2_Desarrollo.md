@@ -140,7 +140,7 @@ Por último, el programa envía un mensaje con selector `GetPhrase` a ese mismo 
 
 <br/>
 
-> [0.3 Patrones y Principios »](./1_3_Patrones_Principios.md)
+> [0.3 Patrones y Principios »](./0_3_Patrones_Principios.md)
 
 <br/>
 
