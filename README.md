@@ -34,7 +34,7 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 # Contenido
 
 
-0. [Objetos, clases y mensajes](./Capitulos/0_Objetos_Clases_Mensajes/1_1_Contenido.md#1-objetos,-clases-y-mensajes)
+0. [Objetos, clases y mensajes](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md#1-objetos,-clases-y-mensajes)
 
     0.1. [Contenido](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md)
 
