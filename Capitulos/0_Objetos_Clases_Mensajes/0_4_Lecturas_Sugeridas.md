@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 1. Objetos, Clases y Mensajes
+# 0. Objetos, Clases y Mensajes
 
-## 1.4 Lecturas sugeridas
+## 0.4 Lecturas sugeridas
 
 En WebAsignatura puedes encontrar material adicional sobre C#. En particular, recomendamos que leas los documentos sobre [estándares de codificación](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) y [guía de nombres](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
 
@@ -18,4 +18,4 @@ Adicionalmente, estas son otras lecturas que amplían sobre el tema:
 
 <br/>
 
-> [2. Ciclo de vida de los objetos »](../2_Ciclo_de_vida_de_los_objetos/2_1_Contenido.md)
+> [1. Ciclo de vida de los objetos »](../2_Ciclo_de_vida_de_los_objetos/2_1_Contenido.md)

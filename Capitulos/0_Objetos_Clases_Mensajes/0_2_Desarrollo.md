@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 1. Objetos, Clases y Mensajes
+# 0. Objetos, Clases y Mensajes
 
-## 1.2 Desarrollo
+## 0.2 Desarrollo
 
 Es tradición que el primer programa en cualquier lenguaje sea uno cuyo propósito consiste en imprimir en la consola el mensaje `¡Hola mundo!`. Fieles a esa tradición haremos ese programa a nuestra manera.
 
@@ -140,7 +140,7 @@ Por último, el programa envía un mensaje con selector `GetPhrase` a ese mismo 
 
 <br/>
 
-> [1.3 Patrones y Principios »](./1_3_Patrones_Principios.md)
+> [0.3 Patrones y Principios »](./1_3_Patrones_Principios.md)
 
 <br/>
 

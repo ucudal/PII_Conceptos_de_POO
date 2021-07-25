@@ -3,9 +3,9 @@
 
 [Conceptos de Programación Orientada a Objetos](../../)
 
-# 2. Ciclo de Vida de los Objetos
+# 1. Ciclo de Vida de los Objetos
 
-## 2.3 Lecturas Sugeridas
+## 1.3 Lecturas Sugeridas
 
 [Automatic Memory Management](https://docs.microsoft.com/es-es/dotnet/standard/automatic-memory-management)
 

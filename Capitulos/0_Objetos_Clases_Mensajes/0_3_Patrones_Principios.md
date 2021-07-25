@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 1. Objetos, Clases y Mensajes
+# 0. Objetos, Clases y Mensajes
 
-## 1.3 Patrones y Principios
+## 0.3 Patrones y Principios
 
 Vimos antes que cada objeto tiene una parte de los datos y una parte de la lógica de programa, la responsabilidad de conocer la parte de los datos que le corresponde y de hacer la parte de la lógica que le corresponde.
 
@@ -31,7 +31,7 @@ El texto de las palabras de una frase podría estar en la clase `Phrase`. Podrí
 
 <br/>
 
-> [1.4 Lecturas sugeridas »](./1_4_Lecturas_Sugeridas.md)
+> [0.4 Lecturas sugeridas »](./1_4_Lecturas_Sugeridas.md)
 
 <br/>
 

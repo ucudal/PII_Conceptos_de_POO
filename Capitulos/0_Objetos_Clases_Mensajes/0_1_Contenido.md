@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 1. Objetos, Clases y Mensajes
+# O. Objetos, Clases y Mensajes
 
-## 1.1 Contenido
+## 0.1 Contenido
 
 Los programas manejan ciertos datos usando cierta lógica o algoritmo. En un programa orientado a objetos hay un conjunto de **objetos** que colaboran pidiendo y prestando servicios.
 
@@ -163,7 +163,7 @@ Algo similar ocurre con los **atributos de clase**, que representan responsabili
 
 <br/>
 
-> [1.2 Desarrollo »](./1_2_Desarrollo.md)
+> [0.2 Desarrollo »](./1_2_Desarrollo.md)
 
 <br/>
 

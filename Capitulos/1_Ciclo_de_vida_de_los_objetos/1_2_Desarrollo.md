@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 2. Ciclo de Vida de los Objetos
+# 1. Ciclo de Vida de los Objetos
 
-## 2.2 Desarrollo
+## 1.2 Desarrollo
 
 Veamos ahora con ejemplos de código lo que presentamos sobre el ciclo de vida de los objeots.
 
@@ -171,7 +171,7 @@ El espacio en la memoria del **stack** para el parámetro `person` se asigna cua
 
 <br/>
 
-> [2.3 Lecturas Sugeridas »](../2_Ciclo_de_vida_de_los_objetos/2_3_Lecturas_Sugeridas.md)
+> [1.3 Lecturas Sugeridas »](../2_Ciclo_de_vida_de_los_objetos/2_3_Lecturas_Sugeridas.md)
 
 <br/>
 
