@@ -42,7 +42,7 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     0.3. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/0_3_Patrones_Principios.md)
 
-    0.4. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/0_4_Lecturas_Sugeridas.md)
+    0.4. [Lecturas sugeridas](./Capitulos/0_Objetos_Clases_Mensajes/0_4_Lecturas_Sugeridas.md)
 
 1. [Ciclo de vida de los objetos](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
 
