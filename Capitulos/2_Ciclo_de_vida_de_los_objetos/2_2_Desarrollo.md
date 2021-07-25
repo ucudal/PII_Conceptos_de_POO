@@ -149,7 +149,7 @@ Cuando pasamos un objeto como parámetro a un método, en realidad estamos pasan
 
 ``` c#
 
-public static void CreateObjects()
+public static void CreateObject()
 {
     Person artillero = new Person("Luis", "Artime");
     Console.WriteLine($"Antes de cambiar el nombre: {artillero.FullName}");
@@ -162,6 +162,8 @@ public static void UseObject(Person person)
     person.FamilyName = "Ganador de Copas";
 }
 ```
+
+> [Ver en repositorio »](https://github.com/ucudal/PII_Object_Lifecycle/blob/master/src/Program/Program.cs#L89)
 
 En el método `CreateObjects()` se crea una instancia de la clase `Person`, que se pasa como parámetro al método `UseObject(Person)`. En el método `UseObject(person)` no se puede acceder a la variable `artillero` declarada en el méotodo `CreateObjects()`, pero sí se puede acceder al objeto que se asignó a esa variable, a través del parámetro `person`. Por ejemplo, se puede cambiar la propiedad `FamilyName` asignado el valor `"Ganador de Copas"`. La variable `artillero` y el parámetro `person` apuntan al mismo objeto. Esto puede comprobarse al imprimir en la consola `Console.WriteLine($"Después de cambiar el nombre: {artillero.FullName}")`: aparece `"Luis Ganador de Copas"` que fue el valor asignado en `UseObject(person)` con `person.FamilyName = "Ganador de Copas"`.
 
