@@ -57,7 +57,7 @@ Las variables que se definen para contener o referenciar objetos dentro de un m�
 </details>
 <br/>
 
-> Por simplicidad estamos asumiendo que todas las variables son refrencias a objetos. En realidad, también hay variables que pueden contener valores, típicamente de tipos de datos simples como valores lógicos, números enteros, caracteres, etc. Para obtener más información sobre la diferencia entre ambos consulta [tipos de datos por referencia](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types) y [tipos de datos por valor](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types).
+> Por simplicidad estamos asumiendo que todas las variables son refrencias a objetos. En realidad, también hay variables que pueden contener valores, típicamente de tipos de datos simples como valores lógicos, números enteros, caracteres, etc. Para obtener más información sobre la diferencia entre ambos consulta [tipos de datos por referencia](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/reference-types) y [tipos de datos por valor](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/value-types).
 
 La memoria no es infinita; cada vez que se asigna memoria a un objeto, es necesario devolverla cuando ese objeto ya no pueda ser utilizado. De lo contrario, se producirían **pérdidas de memoria** o **memory leaks**.
 
@@ -98,8 +98,8 @@ Cuando se destruye un objeto suceden dos cosas:
 
 2.	Se libera la memoria ocupada por el objeto, es decir, se retorna para que pueda ser utilizada más adelante cuando se creen otros objetos.
 
-> En C# método constructor tiene el mismo nombre que la clase, mientras que el método finalizador o destructor tiene el nombre de la clase precedido por el símbolo ```~```. Vean más información [aquí](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors).
+> En C# método constructor tiene el mismo nombre que la clase, mientras que el método finalizador o destructor tiene el nombre de la clase precedido por el símbolo ```~```. Vean más información [aquí](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/destructors).
 
 Todos los recursos que un objeto consuma en el constructor -abrir archivos, conexiones de red, conexiones a bases de datos, etc.- deben ser liberados en el destructor -cerrar archivos, conexiones, etc.-.
 
-Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement).  
+Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/using-statement).  
