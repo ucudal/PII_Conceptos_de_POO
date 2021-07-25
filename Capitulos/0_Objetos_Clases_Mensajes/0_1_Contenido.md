@@ -163,7 +163,7 @@ Algo similar ocurre con los **atributos de clase**, que representan responsabili
 
 <br/>
 
-> [0.2 Desarrollo »](./1_2_Desarrollo.md)
+> [0.2 Desarrollo »](./0_2_Desarrollo.md)
 
 <br/>
 
