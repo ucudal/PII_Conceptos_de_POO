@@ -18,4 +18,4 @@ Adicionalmente, estas son otras lecturas que amplían sobre el tema:
 
 <br/>
 
-> [1. Ciclo de vida de los objetos »](../2_Ciclo_de_vida_de_los_objetos/2_1_Contenido.md)
+> [1. Ciclo de vida de los objetos »](../1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
