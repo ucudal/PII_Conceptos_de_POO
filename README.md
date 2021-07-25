@@ -36,13 +36,13 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
 0. [Objetos, clases y mensajes](./Capitulos/0_Objetos_Clases_Mensajes/1_1_Contenido.md#1-objetos,-clases-y-mensajes)
 
-    0.1. [Contenido](./Capitulos/0_Objetos_Clases_Mensajes/1_1_Contenido.md)
+    0.1. [Contenido](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md)
 
-    0.2. [Desarrollo](./Capitulos/0_Objetos_Clases_Mensajes/1_2_Desarrollo.md)
+    0.2. [Desarrollo](./Capitulos/0_Objetos_Clases_Mensajes/0_2_Desarrollo.md)
 
-    0.3. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/1_3_Patrones_Principios.md)
+    0.3. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/0_3_Patrones_Principios.md)
 
-    0.4. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/1_4_Lecturas_Sugeridas.md)
+    0.4. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/0_4_Lecturas_Sugeridas.md)
 
 1. [Ciclo de vida de los objetos](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
 
