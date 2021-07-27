@@ -102,4 +102,4 @@ Todos los recursos que un objeto consuma en el constructor -abrir archivos, cone
 
 Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/using-statement).  
 
-> [1.2 Desarrollo »](../2_Ciclo_de_vida_de_los_objetos/2_2_Desarrollo.md)
+> [1.2 Desarrollo »](../1_Ciclo_de_vida_de_los_objetos/1_2_Desarrollo.md)
