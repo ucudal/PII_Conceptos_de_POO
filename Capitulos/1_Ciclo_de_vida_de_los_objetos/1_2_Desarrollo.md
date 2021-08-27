@@ -95,7 +95,7 @@ Es posible destruir el objeto antes. Por ejemplo, si hacemos `lucho = null`, est
 public static void AssignTwoVariablesWithObject()
 {
     Person lavandina;
-    lavandina = new Person("Gonzalo", "Bergesio");
+    lavandina = new Person("Gonzalo", "Bergessio");
     Console.WriteLine(lavandina.FullName);
     
     Person goleador;
@@ -108,9 +108,9 @@ public static void AssignTwoVariablesWithObject()
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Object_Lifecycle/blob/master/src/Program/Program.cs#L39)
 
-El código es similar al anterior. Además de la variable `lavandina` de tipo `Person` se define una variable `goleador` también de tipo `Person`. En la sentencia `goleador = lavandina` a esa variable `goleador` se le asigna el objeto referenciado en `lavandina`. Hay un solo objeto, el que se creó con `new Person("Gonzalo", "Bergesio")`, pero dos variables apuntan a él.
+El código es similar al anterior. Además de la variable `lavandina` de tipo `Person` se define una variable `goleador` también de tipo `Person`. En la sentencia `goleador = lavandina` a esa variable `goleador` se le asigna el objeto referenciado en `lavandina`. Hay un solo objeto, el que se creó con `new Person("Gonzalo", "Bergessio")`, pero dos variables apuntan a él.
 
-Esto puede verse claramente cuando accedemos a la propiedad `FullName` del objeto referenciado en la variable `lavandina` con `lavandina.FullName` y luego accedemos a la misma propiedad del objeto referenciado en la variable `goleador`: cuando imprimimos el valor de esa propiedad con `Console.WriteLine(goleador.FullName)` aparece `"Gonzalo Bergesio"` en la consola, a pesar de que enviamos el mensaje al objeto en la variable `goleador` y accedemos a la propiedad del objeto creado en la variable `lavandina`. Ambas variables apuntan al mismo objeto.
+Esto puede verse claramente cuando accedemos a la propiedad `FullName` del objeto referenciado en la variable `lavandina` con `lavandina.FullName` y luego accedemos a la misma propiedad del objeto referenciado en la variable `goleador`: cuando imprimimos el valor de esa propiedad con `Console.WriteLine(goleador.FullName)` aparece `"Gonzalo Bergessio"` en la consola, a pesar de que enviamos el mensaje al objeto en la variable `goleador` y accedemos a la propiedad del objeto creado en la variable `lavandina`. Ambas variables apuntan al mismo objeto.
 
 Una forma de comprobar esto es comparando los objetos referenciados por esas variables con el operador `==`. Por ejemplo, al ejecutar `Console.WriteLine($"¿Las dos variables apuntan al mismo objeto? {lavandina==goleador}")` se imprimirá `True` en la consola.
 
