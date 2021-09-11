@@ -5,7 +5,7 @@
 
 # 0. Objetos, Clases y Mensajes
 
-## 0.4 Lecturas sugeridas
+## 0.5 Lecturas sugeridas
 
 En WebAsignatura puedes encontrar material adicional sobre C#. En particular, recomendamos que leas los documentos sobre [estándares de codificación](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) y [guía de nombres](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
 
