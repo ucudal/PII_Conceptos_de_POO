@@ -79,7 +79,7 @@ La sentencia `Person lucho` define una variable llamada `lucho`capaz que contene
 
 La variable en este momento está vacía, no tiene ningún objeto y su valor es `null`. Como vimos antes, `null` es una palabra clave en C#, que se usa para indicar que no hay ningún objeto asignado a una variable.
 
-La sentencia que está a la derecha del signo `=` en la sentencia `lucho = new Person("Luis", "Suárez")` crea una nueva instancia de la clase Word mediante el constructor `Person(string,string)`. Cuando usamos este constructor los textos `"Luis"` y `"Suárez"` que se pasan como parámetro son asignados a las propiedades `Name` y `FamilyName` del nuevo objeto creado. Ahora tenemos un objeto de la clase `Person` cuya propiedad `FamilyName` tiene el valor `"Luis Suárez"`.
+La sentencia que está a la derecha del signo `=` en la sentencia `lucho = new Person("Luis", "Suárez")` crea una nueva instancia de la clase Word mediante el constructor `Person(string,string)`. Cuando usamos este constructor los textos `"Luis"` y `"Suárez"` que se pasan como parámetro son asignados a las propiedades `Name` y `FamilyName` del nuevo objeto creado. Ahora tenemos un objeto de la clase `Person` cuya propiedad `FullName` tiene el valor `"Luis Suárez"`.
 
 La variable `lucho` se define cuando se comienza a ejecutar el método `AssignVariableWithObject` y ocupa espacio suficiente en el **stack** de la memoria como para contener la dirección de memoria que fue asignada al objeto `Person`. Por su lado ese objeto ocupa espacio en la memoria **heap** de tamaño suficiente como para contener las variables de instancia `name` y `familyName`.
 
@@ -95,7 +95,7 @@ Es posible destruir el objeto antes. Por ejemplo, si hacemos `lucho = null`, est
 public static void AssignTwoVariablesWithObject()
 {
     Person lavandina;
-    lavandina = new Person("Gonzalo", "Bergesio");
+    lavandina = new Person("Gonzalo", "Bergessio");
     Console.WriteLine(lavandina.FullName);
     
     Person goleador;
@@ -108,9 +108,9 @@ public static void AssignTwoVariablesWithObject()
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Object_Lifecycle/blob/master/src/Program/Program.cs#L39)
 
-El código es similar al anterior. Además de la variable `lavandina` de tipo `Person` se define una variable `goleador` también de tipo `Person`. En la sentencia `goleador = lavandina` a esa variable `goleador` se le asigna el objeto referenciado en `lavandina`. Hay un solo objeto, el que se creó con `new Person("Gonzalo", "Bergesio")`, pero dos variables apuntan a él.
+El código es similar al anterior. Además de la variable `lavandina` de tipo `Person` se define una variable `goleador` también de tipo `Person`. En la sentencia `goleador = lavandina` a esa variable `goleador` se le asigna el objeto referenciado en `lavandina`. Hay un solo objeto, el que se creó con `new Person("Gonzalo", "Bergessio")`, pero dos variables apuntan a él.
 
-Esto puede verse claramente cuando accedemos a la propiedad `FullName` del objeto referenciado en la variable `lavandina` con `lavandina.FullName` y luego accedemos a la misma propiedad del objeto referenciado en la variable `goleador`: cuando imprimimos el valor de esa propiedad con `Console.WriteLine(goleador.FullName)` aparece `"Gonzalo Bergesio"` en la consola, a pesar de que enviamos el mensaje al objeto en la variable `goleador` y accedemos a la propiedad del objeto creado en la variable `lavandina`. Ambas variables apuntan al mismo objeto.
+Esto puede verse claramente cuando accedemos a la propiedad `FullName` del objeto referenciado en la variable `lavandina` con `lavandina.FullName` y luego accedemos a la misma propiedad del objeto referenciado en la variable `goleador`: cuando imprimimos el valor de esa propiedad con `Console.WriteLine(goleador.FullName)` aparece `"Gonzalo Bergessio"` en la consola, a pesar de que enviamos el mensaje al objeto en la variable `goleador` y accedemos a la propiedad del objeto creado en la variable `lavandina`. Ambas variables apuntan al mismo objeto.
 
 Una forma de comprobar esto es comparando los objetos referenciados por esas variables con el operador `==`. Por ejemplo, al ejecutar `Console.WriteLine($"¿Las dos variables apuntan al mismo objeto? {lavandina==goleador}")` se imprimirá `True` en la consola.
 
