@@ -5,7 +5,7 @@
 
 # 0. Objetos, Clases y Mensajes
 
-## 0.2 Desarrollo
+## 0.3 Desarrollo
 
 Es tradición que el primer programa en cualquier lenguaje sea uno cuyo propósito consiste en imprimir en la consola el mensaje `¡Hola mundo!`. Fieles a esa tradición haremos ese programa a nuestra manera.
 
@@ -14,20 +14,20 @@ El programa que aparece a continuación se encuentra en muchos textos sobre C# p
 ```c#
 using System;
 
-namespace HelloWorld 
+namespace HelloWorld
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("¡Hola mundo!"); 
+            Console.WriteLine("¡Hola mundo!");
         }
     }
 }
 ```
 
 > ⚠️  **Nota**: <br/>La declaración `namespace` permite definir un espacio de nombre para los tipos definidos en el archivo de código fuente; es conveniente definir un espacio de nombres, pero no es obligatorio; en el código que puedes descargar de GitHub usamos espacios de nombre, pero en este documento lo omitimos por simplicidad.
-> 
+>
 >La declaración del método de clase `Main` incluye los argumentos que se reciben en el programa de consola desde el sistema operativo; aquí los omitimos porque no los vamos a usar.
 
 Aunque este programa imprime en la consola `"¡Hola Mundo!"`, no nos permite ver cómo es un programa orientado a objetos, pues no usa clases ni crea objetos como ocurre en un programa orientado a objetos<sup>6</sup>.
@@ -44,9 +44,9 @@ public class Word
 
     public Word(string text)
     {
-        this.Text = text; 
+        this.Text = text;
     }
-    
+
     public string Text
     {
         get
@@ -76,32 +76,32 @@ public class Phrase
 
     public Phrase()
     {
-        this.words = new ArrayList(); 
+        this.words = new ArrayList();
     }
-    
+
     public void AddWord(Word word)
     {
-        this.words.Add(word); 
+        this.words.Add(word);
     }
-    
+
     public void RemoveWord(Word word)
     {
-        this.words.Remove(word); 
+        this.words.Remove(word);
     }
-    
+
     public string GetPhrase()
     {
         StringBuilder phrase = new StringBuilder();
-        
-        foreach (Word word in this.words) 
+
+        foreach (Word word in this.words)
         {
             phrase.Append(" ");
-            phrase.Append(word.Text); 
+            phrase.Append(word.Text);
         }
 
         string result = phrase.ToString();
         result = result.TrimStart();
-        
+
         return result;
     }
 }
@@ -118,13 +118,13 @@ public class Program
     {
         Word hello = new Word("Hola");
         Word world = new Word("Mundo!");
-        Phrase greeting = new Phrase(); 
-        
-        greeting.AddWord(hello); 
-        greeting.AddWord(world); 
-        
+        Phrase greeting = new Phrase();
+
+        greeting.AddWord(hello);
+        greeting.AddWord(world);
+
         Console.WriteLine(greeting.GetPhrase());
-    } 
+    }
 }
 ```
 
@@ -140,7 +140,7 @@ Por último, el programa envía un mensaje con selector `GetPhrase` a ese mismo 
 
 <br/>
 
-> [0.3 Patrones y Principios »](./0_3_Patrones_Principios.md)
+> [0.4 Patrones y Principios »](./0_4_Patrones_Principios.md)
 
 <br/>
 

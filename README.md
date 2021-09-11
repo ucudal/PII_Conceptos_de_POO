@@ -38,11 +38,13 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     0.1. [Contenido](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md)
 
-    0.2. [Desarrollo](./Capitulos/0_Objetos_Clases_Mensajes/0_2_Desarrollo.md)
+    0.2. [Pasando conceptos a código](./Capitulos/0_Objetos_Clases_Mensajes/0_2_Pasando_conceptos_a_código.md)
 
-    0.3. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/0_3_Patrones_Principios.md)
+    0.3. [Desarrollo](./Capitulos/0_Objetos_Clases_Mensajes/0_3_Desarrollo.md)
 
-    0.4. [Lecturas sugeridas](./Capitulos/0_Objetos_Clases_Mensajes/0_4_Lecturas_Sugeridas.md)
+    0.4. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/0_4_Patrones_Principios.md)
+
+    0.5. [Lecturas sugeridas](./Capitulos/0_Objetos_Clases_Mensajes/0_5_Lecturas_Sugeridas.md)
 
 1. [Ciclo de vida de los objetos](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
 
@@ -57,7 +59,7 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
     2.1. [Contenido](./Capitulos/2_Tipos/2_1_Contenido.md)
 
     2.2. [Desarrollo](./Capitulos/2_Tipos/2_2_Desarrollo.md)
-    
+
     2.3. [Lecturas sugeridas](./Capitulos/2_Tipos/2_3_Lecturas_Sugeridas.md)
 
 3. [Tipos genéricos](./Capitulos/3_Tipos_Genericos/3_1_Contenido.md#1-tipos-genéricos)
@@ -92,4 +94,4 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     6.3. [Lecturas Sugeridas](./Capitulos/6_Composicion_Delegacion/6_3_Lecturas_Sugeridas.md)
 
-7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia) 
+7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia)
