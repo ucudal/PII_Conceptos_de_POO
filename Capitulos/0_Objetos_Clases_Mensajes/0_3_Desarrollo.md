@@ -205,7 +205,11 @@ El diagrama de la clase `Phrase` queda así:
 
 ![Prhase](./../../Assets/Phrase.svg)
 
-La sección debajo del nombre de la clase aparece en blanco porque `Phrase` no tiene atributos públicos. Los métodos aparecen debajo.
+La sección debajo del nombre de la clase aparece en blanco porque `Phrase` no tiene atributos públicos. Los tres métodos de esa clase aparecen debajo.
+
+Podemos representar también a la relación entre `Phrase` y `Word` mediante una línea que va de `Phrase` a `Word`. Del lado de `Phrase` la línea tiene un rombo, lo que significa que las instancias de `Phrase` **están compuestas por** instancais de `Word`; como la flecha va en un solo sentido, significa que `Word` no conoce a `Phrase`. Como una instancia de `Phrase` está compuesta de 0 o muchas instacias de `Word`, la flecla tiene un `1` del lado de `Phrase` y un `*` del lado de `Word`. La palabra `word` sobre la flecha indica el nombre con el cual `Phrase` referencia a `Word`.
+
+![Prhase+Word](./../../Assets/Phrase+Word.svg)
 
 <br>
 
@@ -254,6 +258,16 @@ Esta nueva versión del programa declara dos variables locales del tipo `Word` l
 Luego el programa declara una variable de tipo `Phrase` llamada `greeting`. Luego crea un objeto de la clase `Phrase` que es almacenado en esa variable. El programa luego envía mensajes con selector `AddWord` al objeto referenciado en la variable `greeting` pasando como argumento de los mensajes los objetos de tipo `Word` creados anteriormente.
 
 Por último, el programa envía un mensaje con selector `GetPhrase` a ese mismo objeto, y el resultado se imprime en la consola.
+
+<br>
+
+El diagrama completo en UML quedaría así:
+
+![Prhase+Word](./../../Assets/0_Objetos_Clases_Mensajes.svg)
+
+Las líneas punteadas representa que `Program` depende de `Phrase` y de `Word` pero nada más, la referencias a esas clases son simples variables definidas localmente en el método `void Main()`. Este método aparece subrajayado porque es un método estático.
+
+<br>
 
 > [0.4 Patrones y Principios »](./0_4_Patrones_Principios.md)
 
