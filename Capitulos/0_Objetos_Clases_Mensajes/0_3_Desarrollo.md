@@ -112,7 +112,15 @@ La clase `Word` tiene una propiedad `Text` de lectura y escritura para implement
 
 <br>
 
+Las tarjetas CRC son una forma simple y efectiva de representar clases, responsabilidades y colaboraciones, pero hay otras formas de mostrar nuestas clases y objetos: los diagramas [UML](https://www.omg.org/UML/). En particular, los [diagramas de clase](https://en.wikipedia.org/wiki/Class_diagram) UML.
+
+Una clase se representa en UML mediante un rectángulo. Al igual que en las tarjetas CRC, hay tres secciones en el rectángulo, pero apiladas, una encima de la otra. En la primera sección aparece el nombre de la clase, debajo todas las propiedades, y luego todos los métodos.
+
+El diagrama de la clase `Word` queda así:
+
 ![Word](./../../Assets/Word.svg)
+
+El símbolo `+` delante de los miembros -propiedades, variables de instancia, métodos, etc.- indica que el miembro es público. Las propiedades y variables de instancia aparecen con el nombre primero y el tipo después, separados por el símbolo `:`. Los métodos aparece con el nombre primero, los tipos de los parámetros después, separados por los símbolos `(` y `)`, y el tipo al final, separado por el símbolo `:`.
 
 <br>
 
@@ -185,9 +193,19 @@ public class Phrase
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_WordsPhrases_v1/blob/master/src/Library/Phrase.cs)
 
+<br>
+
 Como una instancia de la clase `Phrase` tiene la responsabilidad de conocer mútiples instancias de la clase `Word` -noten que la responsabilidad es "conocer las palabras", no solo "una palabra"-, necesitamos implementar esa responsabilidad de conocer mediante un contenedor, también llamado [colección](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/concepts/collections). Un contenedor o colección es una clase capaz de contener múltiples instancias de otra. En este caso usamos como contenedor una instancia de la clase `ArrayList` que se crea en el constructor `Phrase()` y se asigna a la variable de instancia `words` cuando se ejecuta el constructor.
 
 La responsabilidad de agregar palabras a la frase se implementa en el método `AddWord(Word)` y la de remover palabras de la frase en el método `RemoveWord(Word)`. Por último, la responsabilidad de armar el texto de la frase se implementa en el método `string GetPhrase()`.
+
+<br>
+
+El diagrama de la clase `Phrase` queda así:
+
+![Prhase](./../../Assets/Phrase.svg)
+
+La sección debajo del nombre de la clase aparece en blanco porque `Phrase` no tiene atributos públicos. Los métodos aparecen debajo.
 
 <br>
 
