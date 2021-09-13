@@ -112,6 +112,10 @@ La clase `Word` tiene una propiedad `Text` de lectura y escritura para implement
 
 <br>
 
+![Word](./Assets/Word.drawio.svg)
+
+<br>
+
 Creemos también la tarjeta para la clase `Phrase` con la que representamos las frases, y la responsabilidad de conocer las palabras, y las responsabilidades de agregar y quitar palabras, así como de armar el texto de la frase a partir del texto de las palabras:
 
 <table id="card">
