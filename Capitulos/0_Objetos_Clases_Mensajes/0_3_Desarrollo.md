@@ -112,7 +112,7 @@ La clase `Word` tiene una propiedad `Text` de lectura y escritura para implement
 
 <br>
 
-![Word](./Assets/Word.drawio.svg)
+![Word](./../../Assets/Word.drawio.svg)
 
 <br>
 
