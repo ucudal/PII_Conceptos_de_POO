@@ -8,17 +8,19 @@
 ## 2.2 Desarrollo
 
 Los objetos colaboran entre ellos para realizar tareas más complejas de las que pueden realizar por si solos.
-Los objetos piden colaboración enviando mensajes, que indican a los objetos que los reciben las tareas que deben realizar. Pero las tareas que un objeto puede realizar son limitadas y numerables. Me gustan los autos y las canciones, entre otras cosas.
+Los objetos piden colaboración enviando mensajes, que indican a los objetos que los reciben las tareas que deben realizar. Pero las tareas que un objeto puede realizar son limitadas y numerables.
 
-No puedo pedirle la partitura a mi auto favorito<sup>1</sup>. El auto no entendería el mensaje, no sabe qué es una partitura. Además, yo sé qué cosas puedo pedirle a un auto, así que ni siquiera se me ocurría pedírselo, sería improductivo. En cambio, sí podría preguntarle la partitura a mi canción favorito.
+Me gustan los autos y las canciones, entre otras cosas.
 
-Por otro lado, mi auto favorito sí sabe cómo llevarme de un lado a otro. Yo puedo pedirle, que se prenda o se apague. Es algo que yo sé que mi auto puede hacer, porque todos los autos, independientemente del modelo o marco, pueden hacerlo; es parte de la definición de auto Llevarme de un lugar a otro, prenderse, o apagarse, es algo que no me sorprende que un auto pueda hacer, si no lo hace ni siquiera lo consideraría un auto. 
+No puedo pedirle la partitura a mi auto favorito<sup>1</sup>. El auto no entendería el mensaje, no sabe qué es una partitura. Además, yo sé qué cosas puedo pedirle a un auto, así que ni siquiera se me ocurría pedírselo, sería improductivo. En cambio, sí podría preguntarle la partitura a mi canción favorita.
+
+Por otro lado, mi auto favorito sí sabe cómo llevarme de un lado a otro. Puedo pedirle que se prenda o se apague. Es algo que yo sé que mi auto puede hacer, porque todos los autos, independientemente del modelo o marca, pueden hacerlo; es parte de la definición de auto llevarme de un lugar a otro, prenderse, o apagarse, es algo que no me sorprende que un auto pueda hacer, si no lo hace ni siquiera lo consideraría un auto.
 
 Hasta ahora vimos dos puntos: por un lado, que yo no le pido a mi auto favorito cosas que sé que no puede hacer, y por otro, que por la propia definición de auto sé qué cosas puede hacer y cómo debo pedírselas. ¿Qué pasaría si cuando a uno compra un auto no sabe que es lo que ese auto hace? Imaginemos que nos compramos un auto y no se prende, ni se apaga, ni me lleva de un lado a otro, sino que me dice su biografía y en qué películas actuó. Obviamente no podríamos usar ese objeto como inicialmente queríamos hacerlo. Compramos un auto para que nos lleve de un lado a otro. En definitiva, ese auto no me sirve de mucho, porque no hace lo que espero que haga. Yo voy a enviar mensajes para prender, por ejemplo, y nunca voy a enviar un mensaje preguntando por la biografía, ¡porque estoy convencido de tener un auto!
 
-Pero esto no es algo que suceda en la vida real, porque en la vida real nombres como “auto” describen tipos de objetos. Cuando decimos que un objeto “es un auto” sabemos que es lo que ese objeto puede o no hacer. Existe una especie de contrato que tanto el auto como yo respetamos. El auto me lleva de un lugar a otro, porque en caso contrario no sería un auto, y yo no le pido que me diga su biografía, porque sé que un auto no puede hacerlo. El contrato me permite usar ese auto y realizar tareas más complejas que las que yo podría hacer solo.
+Pero esto no es algo que suceda en la vida real, porque en la vida real nombres como “auto” describen tipos de objetos. Cuando decimos que un objeto “es un auto” sabemos que es lo que ese objeto puede o no hacer. Existe una especie de “contrato” que tanto el auto como yo respetamos. El auto me lleva de un lugar a otro, porque en caso contrario no sería un auto, y yo no le pido que me diga su biografía, porque sé que un auto no puede hacerlo. El contrato me permite usar ese auto y realizar tareas más complejas que las que yo podría hacer solo.
 
-En definitiva, si yo no sé qué cosas puedo hacer con un auto, y cómo pedirle que las haga, no puedo hacer uso de él. Saber que un objeto es de tipo “auto” me informa qué puede hacer, y cómo pedírselo. 
+En definitiva, si yo no sé qué cosas puedo hacer con un auto, y cómo pedirle que las haga, no puedo hacer uso de él. Saber que un objeto es de tipo “auto” me informa qué puede hacer, y cómo pedírselo.
 
 El tipo define las operaciones que puedo hacer sobre un objeto y como referirme a ellas.
 
@@ -30,7 +32,7 @@ A un auto puedo pedirle que me lleve de un lugar a otro y decirle que me gusta; 
 
 Por lo tanto, un objeto puede tener varios tipos, mientras que cumpla el contrato que define cada uno.
 
-Es importante ver que un tipo define a una familia de posibles objetos. Es una especificación, o contrato, de los servicios que un objeto provee, pero no un objeto en sí. Todos los autos en un concesionario son eso,autos; y cada uno de ellos es diferente de los demás, por más que sean todos autos.
+Es importante ver que un tipo define a una familia de posibles objetos. Es una especificación, o contrato, de los servicios que un objeto provee, pero no un objeto en sí. Todos los autos en un concesionario son eso, autos; y cada uno de ellos es diferente de los demás, por más que sean todos autos.
 
 ¿Cuál es la diferencia con una clase? Si recuerdan el concepto de clase, ésta es una plantilla o molde para un conjunto de objetos. En una clase definimos los distintos mensajes que puede recibir un objeto. Sin embargo, además, definimos el código que va a ejecutarse al recibir cada mensaje, y los atributos de la clase (cuyos valores definen el estado de un objeto instancia de esa clase). Pero en el caso de un tipo, éste solo sirve para especificar qué servicios o mensajes atiende un objeto de ese tipo, pero no da ningún detalle de implementación. Ni cómo va a procesar ese mensaje, ni qué atributos utilizará para manejar su estado. No es algo que nos interese al comprar un auto. Solo pedimos que haga lo que un auto tiene que hacer. Cómo lo hace, en general no solo no lo sabemos, sino que no nos importa. Además, cómo lo hace no es parte de la definición de un auto, depende del fabricante.
 
@@ -38,8 +40,7 @@ Esto tiene como principal consecuencia que no existe el concepto de instancia de
 
 Para concluir, un tipo define los servicios que provee un objeto, es lo que me permite interactuar con el objeto porque es lo que me permite saber que puedo pedirle al mismo y cómo hacerlo. Un tipo difiere de una clase en que no especifica como se procesa el mensaje o se brinda el servicio, ni define que atributos son necesarios para mantener el estado de un objeto de ese tipo.
 
-¿Como funciona todo esto a nivel del lenguaje de programación? Simplemente tenemos que decirle al programa de qué tipo es cada objeto que utilicemos, de forma de indicarle cuáles son las operaciones que podemos realizar sobre el mismo y que mensaje debemos enviarle para utilizarlas. Si enviamos un mensaje
-que ese tipo no sabe procesar, se generara un error<sup>2</sup>.
+¿Como funciona todo esto a nivel del lenguaje de programación? Simplemente tenemos que decirle al programa de qué tipo es cada objeto que utilicemos, de forma de indicarle cuáles son las operaciones que podemos realizar sobre el mismo y que mensaje debemos enviarle para utilizarlas. Si enviamos un mensaje que ese tipo no sabe procesar, se generara un error<sup>2</sup>.
 
 Dado que un tipo no es lo mismo que una clase, C# nos provee una construcción particular para tipos, llamada interface, donde se pueden especificar los mensajes que puede recibir un objeto de ese tipo, para acceder a su estado o pedirle que haga algo, pero no la implementación de los métodos ni las variables de instancia que podría necesitar.
 
@@ -62,6 +63,11 @@ public interface IElectric
 ```
 > [Ver en repositorio »](https://github.com/ucudal/PII_Types/blob/master/src/Library/IElectric.cs)
 
+En UML representamos las interfaces de forma similar a las clases, pero agregando `<interface>` antes del nombre de la interfaz. La representación de la interfaz `IElectric` en UML quedaría así:
+
+![IElectric](./../../Assets/IElectric.svg)
+
+</br>
 
 ```c#
 using System;
@@ -74,6 +80,12 @@ public interface ILikeable
 }
 ```
 > [Ver en repositorio »](https://github.com/ucudal/PII_Types/blob/master/src/Library/ILikeable.cs)
+
+En UML representamos esta otra interfaz así:
+
+![ILikeable](./../../Assets/ILikeable.svg)
+
+</br>
 
 ```c#
 using System;
@@ -90,7 +102,7 @@ public class Car : IElectric, ILikeable
         this.isOn = false;
         this.likes = 0;
     }
-    
+
     public String Model
     {
         get
@@ -98,7 +110,7 @@ public class Car : IElectric, ILikeable
             return this.model;
         }
     }
-    
+
     public Boolean IsOn
     {
         get
@@ -140,6 +152,12 @@ public class Car : IElectric, ILikeable
 }
 ```
 > [Ver en repositorio »](https://github.com/ucudal/PII_Types/blob/master/src/Library/Car.cs)
+
+En UML representamos que la clase `Car` implementa las interfaces `ILikeable` e `IElectric` así:
+
+![Car+IElectric+ILikeable](./../../Assets/Car+IElectric+ILikeable.svg)
+
+</br>
 
 ```c#
 using System;
@@ -201,11 +219,11 @@ public class Program
         likeable.Like();
         likeable.Like();
         Console.WriteLine("{0} tiene {1} me gusta", model, car.Likes);
-        
+
         electric = car;
         electric.TurnOn();
         Console.WriteLine("{0} está prendido: {1}", model, electric.IsOn);
-        
+
         String name = "John Travolta";
         Actor actor = new Actor(name);
         actor.Like();
