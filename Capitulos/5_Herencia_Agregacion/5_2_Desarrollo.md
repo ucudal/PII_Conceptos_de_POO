@@ -17,7 +17,7 @@ También los discos tienen un género. Un género típico es el de los “clási
 
 “Lo que el viento se llevó” es del año 1939, “Casablanca” es del año 1943, “Abraxas” es del año 1970 y “The Wall” de 1988. Los discos también tienen un año.
 
-Programemos una clase Disco de acuerdo a lo que acabamos de ver.
+Programemos una clase `Disc` de acuerdo a lo que acabamos de ver.
 
 ```c#
 public abstract class Disc
@@ -42,7 +42,7 @@ public abstract class Disc
 
 Una clase abstract se define en UML como una clase concreta -concreta es lo contrario a abstracta- pero agregando `<abstract>` delante del nombre de la clase:
 
-![Disc](./Assets/Disc.svg)
+![Disc](../Assets/Disc.svg)
 
 La discoteca contiene todos los discos. Puedo buscar un disco por el nombre, obtener todos los discos de un género, u obtener los discos más nuevos.
 
