@@ -29,7 +29,7 @@ Cada método de la primera clase envía un mensaje al objeto de la segunda; esto
 | Delegación |
 | ---- |
 | La delegación es un mecanismo en programación por el cual cuando un objeto recibe un mensaje para realizar una operación, no la realiza él mismo, si no que la encarga a otro objeto. |
-| Este otro objeto suele ser un objeto compuesto |
+| Este otro objeto es el objeto componenete |
 
 </details>
 <br/>
