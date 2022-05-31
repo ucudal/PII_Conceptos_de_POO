@@ -94,7 +94,7 @@ Por estas razones decimos que la composición favorece la modularidad. La modula
 
 | Cohesión |
 | ---- |
-| La cohesión es la forma y el grado en el que las responsabili dadesde una clase o de las clases contenidas en un paquete están relacionas unas con otras. |
+| La cohesión es la forma y el grado en el que las responsabilidades de una clase o de las clases contenidas en un paquete están relacionas unas con otras. |
 | Cuando la cohesión es alta es mejor. |
 
 </details>
