@@ -414,7 +414,7 @@ En esta nueva versión tenemos los mismos beneficios y desventajas que en la ant
 
 <br/>
 
-> [4. Programar contra especificaciones »](../4_Programar_Contra_Especificaciones/4_1_Diseno_Por_Contrato.md)
+> [4. Programar contra especificaciones »](../4_Programar_Contra_Especificaciones/4_1_Diseño_Por_Contrato.md)
 
 ****
 
