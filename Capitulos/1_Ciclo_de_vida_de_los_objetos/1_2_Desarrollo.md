@@ -171,7 +171,7 @@ El espacio en la memoria del **stack** para el parámetro `person` se asigna cua
 
 <br/>
 
-> [1.3 Lecturas Sugeridas »](../2_Ciclo_de_vida_de_los_objetos/2_3_Lecturas_Sugeridas.md)
+> [1.3 Lecturas Sugeridas »](../1_Ciclo_de_vida_de_los_objetos/1_3_Lecturas_Sugeridas.md)
 
 <br/>
 
