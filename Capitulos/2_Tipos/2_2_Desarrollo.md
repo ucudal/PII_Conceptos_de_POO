@@ -49,7 +49,7 @@ Luego, para poder construir objetos de un cierto tipo, necesito tener una clase 
 > ⚠️  **Nota**: <br/>
 > Cuando una clase implementa un tipo declarado mediante la palabra clave **interface**, tiene en realidad dos tipos: el tipo explícito de la declaración y el tipo implícito compuesto por todos los métodos y atributos de esa clase.
 
-A continuación, definiremos los tipos **IElectric** para las cosas que puedo prender y apagar y **ILikeable** para las que me pueden gustar o no, explícitamente como interfases; también definiremos una clase **Car** que implementará los tipos **IElectric** y **ILikable** y por lo tanto tendrá los tipos **Car**, **IElectric** y **ILikeable** y una clase Actor que implementará el tipo **ILikeable** y por lo tanto tendrá los tipos **Actor** y **ILikeable**.
+A continuación, definiremos los tipos **IElectric** para las cosas que puedo prender y apagar e **ILikeable** para las que me pueden gustar o no, explícitamente como interfaces; también definiremos una clase **Car** que implementará los tipos **IElectric** e **ILikable** y por lo tanto tendrá los tipos **Car**, **IElectric** e **ILikeable** y una clase Actor que implementará el tipo **ILikeable** y por lo tanto tendrá los tipos **Actor** e **ILikeable**.
 
 ```c#
 using System;
