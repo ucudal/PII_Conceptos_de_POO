@@ -11,8 +11,8 @@ Puede llegar a haber métodos iguales o muy parecidos en una clase que estamos p
 
 Agrego a los objetos de la clase que debe implementar el tipo, objetos de una segunda clase que ya tenga el tipo implementado, o creo una segunda clase sólo a efectos de contener esos métodos; esto es llamado **composición**.
 
-<details>
-<summary>🗒 Tarjeta: Composición »</summary>
+<details open>
+<summary>🗒 Tarjeta: Composición ±</summary>
 
 | Composición |
 | ---- |
@@ -23,8 +23,8 @@ Agrego a los objetos de la clase que debe implementar el tipo, objetos de una se
 
 Cada método de la primera clase envía un mensaje al objeto de la segunda; esto es conocido como **delegación**.
 
-<details>
-<summary>🗒 Tarjeta: Delegación »</summary>
+<details open>
+<summary>🗒 Tarjeta: Delegación ±</summary>
 
 | Delegación |
 | ---- |
@@ -36,8 +36,8 @@ Cada método de la primera clase envía un mensaje al objeto de la segunda; esto
 
 La clase compuesta sólo necesita conocer el tipo de la clase componente para poder hacer la delegación. La composición y delegación permiten reutilizar código basándose exclusivamente en los tipos de los objetos.
 
-<details>
-<summary>🗒 Tarjeta: Composición y reutilización »</summary>
+<details open>
+<summary>🗒 Tarjeta: Composición y reutilización ±</summary>
 
 | Composición y reutilización |
 | ---- |
@@ -46,8 +46,8 @@ La clase compuesta sólo necesita conocer el tipo de la clase componente para po
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Composición vs. herencia »</summary>
+<details open>
+<summary>🗒 Tarjeta: Composición vs. herencia ±</summary>
 
 | Composición vs. herencia |
 | ---- |
@@ -59,8 +59,8 @@ La clase compuesta sólo necesita conocer el tipo de la clase componente para po
 
 Es posible cambiar el comportamiento de una clase compuesta, cambiando la clase componente. Esto se puede lograr aún dinámicamente.
 
-<details>
-<summary>🗒 Tarjeta: Composición vs Herencia »</summary>
+<details open>
+<summary>🗒 Tarjeta: Composición vs Herencia ±</summary>
 
 | Composición | Herencia |
 | :----: | :----: |
@@ -89,8 +89,8 @@ La composición reduce las dependencias indeseables, porque require sólo de la 
 
 Por estas razones decimos que la composición favorece la modularidad. La modularidad es la propiedad de un sistema que ha sido descompuesto en un conjunto de módulos altamente cohesivos y poco acoplados.
 
-<details>
-<summary>🗒 Tarjeta: Cohesión »</summary>
+<details open>
+<summary>🗒 Tarjeta: Cohesión ±</summary>
 
 | Cohesión |
 | ---- |
@@ -100,8 +100,8 @@ Por estas razones decimos que la composición favorece la modularidad. La modula
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Acoplamiento »</summary>
+<details open>
+<summary>🗒 Tarjeta: Acoplamiento ±</summary>
 
 | Acoplamiento |
 | ---- |
@@ -111,8 +111,8 @@ Por estas razones decimos que la composición favorece la modularidad. La modula
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Modularidad »</summary>
+<details open>
+<summary>🗒 Tarjeta: Modularidad ±</summary>
 
 | Modularidad |
 | ---- |

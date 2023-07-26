@@ -15,37 +15,37 @@ Además, si el contenedor contiene cualquier tipo de objeto -es decir, objetos d
 
 Para evitar este tipo de errores, es posible utilizar **tipos genéricos**. En éstos, es posible declarar sobre qué tipo o tipos va a operar el tipo genérico, de forma de poder realizar los controles de tipos necesarios. Por ejemplo, podría decir que una lista es un tipo genérico y al momento de construirla declarar el tipo de objetos que la lista va a contener. Esto permite que luego el compilador pueda controlar que los objetos agregados en esta lista sean del tipo correcto y evitar hacer un _typecast_ al acceder a uno de ellos.
 
-<details>
-  <summary>🗒 Tarjeta: Genéricos »</summary>
-  
+<details open>
+  <summary>🗒 Tarjeta: Genéricos ±</summary>
+
   |Genéricos|
   |---|
   |Los genéricos son un **mecanismo** de los lenguajes de programación para implementar **declarativamente** relaciones de **generalización** entre un tipo base y uno o más tipos mediante el uso de **tipos parámetro**.|
-  
+
 </details>
 
-<details>
-  <summary>🗒 Tarjeta: Tipo genérico y tipo parámetro »</summary>
-  
+<details open>
+  <summary>🗒 Tarjeta: Tipo genérico y tipo parámetro ±</summary>
+
   |Tipo genérico y tipo parámetro|
   |---|
   |Un **tipo genérico** es un tipo que se define en términos de otro **tipo parámetro**.|
-  
+
 </details>
 
-<details>
-  <summary>🗒 Tarjeta: Tipo argumento y tipo construido »</summary>
-  
+<details open>
+  <summary>🗒 Tarjeta: Tipo argumento y tipo construido ±</summary>
+
   |Tipo argumento y tipo construido|
   |---|
-  |Cuando se **declara** una variable o parámetro de un tipo genérico se provee un **tipo argumento**. 
+  |Cuando se **declara** una variable o parámetro de un tipo genérico se provee un **tipo argumento**.
   |Al tipo asi declarado se le llama **tipo construido**.|
-  
+
 </details>
 
-El uso de genéricos provee lo que se conoce como **polimorfismo paramétrico**, al permitir usar una misma declaración de distinta forma en base a un parámetro especificado al momento de utilizarla. Siguiendo con el ejemplo anterior, la declaración de la clase lista puede ser parametrizada con el tipo de objeto contenido al momento de definir una nueva lista. 
+El uso de genéricos provee lo que se conoce como **polimorfismo paramétrico**, al permitir usar una misma declaración de distinta forma en base a un parámetro especificado al momento de utilizarla. Siguiendo con el ejemplo anterior, la declaración de la clase lista puede ser parametrizada con el tipo de objeto contenido al momento de definir una nueva lista.
 
-Los tipos genéricos son solo una clase de declaraciones genéricas. Muchos lenguajes, incluyendo C#, permiten también definir **métodos genéricos**, los cuales pueden determinar el tipo de dato retornado en base a un parámetro pasado al momento de invocarlo, o imponer restricciones sobre los parámetros recibidos. Por ejemplo, declarar un método que recibe dos objetos de cualquier tipo, siempre y cuando ambos tengan el mismo tipo. 
+Los tipos genéricos son solo una clase de declaraciones genéricas. Muchos lenguajes, incluyendo C#, permiten también definir **métodos genéricos**, los cuales pueden determinar el tipo de dato retornado en base a un parámetro pasado al momento de invocarlo, o imponer restricciones sobre los parámetros recibidos. Por ejemplo, declarar un método que recibe dos objetos de cualquier tipo, siempre y cuando ambos tengan el mismo tipo.
 
 
 <br/>
