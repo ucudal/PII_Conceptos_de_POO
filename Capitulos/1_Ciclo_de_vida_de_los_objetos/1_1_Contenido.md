@@ -11,8 +11,8 @@ Ya sabes qué son las clases de objetos y cómo definir clases de objetos. Tambi
 
 Correcto, los objetos se crean y en algún momento desaparecen, a eso le llamamos el ciclo de vida de un objeto.
 
-<details>
-<summary>🗒 Tarjeta: Ciclo de vida »</summary>
+<details open>
+<summary>🗒 Tarjeta: Ciclo de vida ±</summary>
 
 | Tipo |
 | ---- |
@@ -35,8 +35,8 @@ Mientras que los objetos creados ocupan una parte de la memoria llamada **heap**
 
 Las variables que se definen para contener o referenciar objetos dentro de un método existen solamente mientras se ejecuta ese método. El espacio de memoria ocupado por esas variables -suficiente como para contener una dirección de memoria por cada variable- es reservado en el **stack** o **pila** cuando se declaran esas variables. Cuando el método termina, el espacio ocupado por las variables se libera, porque las variables definidas dentro un método no pueden ser accedidas fuera de ese método.
 
-<details>
-<summary>🗒 Tarjeta: Pila y variables »</summary>
+<details open>
+<summary>🗒 Tarjeta: Pila y variables ±</summary>
 
 | Stack o pila |
 | ---- |
@@ -45,8 +45,8 @@ Las variables que se definen para contener o referenciar objetos dentro de un m�
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Montículo y objetos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Montículo y objetos ±</summary>
 
 | Heap o montículo |
 | ---- |
@@ -66,8 +66,8 @@ El ciclo de vida de los objetos es manejado por el **runtime** o **ambiente de e
 El **runtime** es una máquina virtual donde se ejecuta el programa. Esta máquina virtual convierte las sentencias de tu programa en instrucciones de código de máquina que pueden ser ejecutadas por el procesador. Además, gestiona el ciclo de vida de los objetos: cuando creas un objeto, el **runtime** utiliza servicios del sistema operativo para asignar un espacio de memoria en el **heap**, y la dirección de ese espacio de memoria se guarda en una variable que está en otro espacio de memoria en el **stack**.
 
 
-<details>
-<summary>🗒 Tarjeta: Asignación de variables »</summary>
+<details open>
+<summary>🗒 Tarjeta: Asignación de variables ±</summary>
 
 | Asignación de variables |
 | ---- |
@@ -78,8 +78,8 @@ El **runtime** es una máquina virtual donde se ejecuta el programa. Esta máqui
 
 Cuando un método termina, se libera el espacio de memoria en el **stack** ocupado por las variables definidas en ese método. Cuando todas las variables que referencian a un objeto son liberadas, ese objeto no podrá ser accedido -no es posible enviarle mensajes o acceder a sus propiedades-, y el espacio de memoria en el **heap** ocupado por el objeto puede ser liberado. También puede ser liberado el espacio en el **heap** cuando todas las variables que referencian a un objeto tienen el valor ```null```.
 
-<details>
-<summary>🗒 Tarjeta: Nulos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Nulos ±</summary>
 
 | Nulos |
 | ---- |
@@ -100,6 +100,6 @@ Cuando se destruye un objeto suceden dos cosas:
 
 Todos los recursos que un objeto consuma en el constructor -abrir archivos, conexiones de red, conexiones a bases de datos, etc.- deben ser liberados en el destructor -cerrar archivos, conexiones, etc.-.
 
-Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/using-statement).  
+Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/using-statement).
 
 > [1.2 Desarrollo »](../1_Ciclo_de_vida_de_los_objetos/1_2_Desarrollo.md)
