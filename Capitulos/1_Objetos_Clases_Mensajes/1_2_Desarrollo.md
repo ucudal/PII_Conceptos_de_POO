@@ -489,7 +489,6 @@ Podemos decir que la clase `Program` tiene la responsabilidad de presentar perso
 
 El diagrama completo en UML quedaría así:
 
-![Prhase+Word](./../../Assets/0_Objetos_Clases_Mensajes.svg)
 ```mermaid
 classDiagram
 class Person{
