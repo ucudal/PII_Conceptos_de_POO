@@ -33,26 +33,15 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
 # Contenido
 
+1. [Objetos, clases y mensajes](./Capitulos/1_Objetos_Clases_Mensajes/1_1_Contenido.md#1-objetos,-clases-y-mensajes)
 
-0. [Objetos, clases y mensajes](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md#1-objetos,-clases-y-mensajes)
+    1.1. [Contenido](./Capitulos/1_Objetos_Clases_Mensajes/1_1_Contenido.md)
 
-    0.1. [Contenido](./Capitulos/0_Objetos_Clases_Mensajes/0_1_Contenido.md)
+    1.2. [Desarrollo](./Capitulos/1_Objetos_Clases_Mensajes/1_2_Desarrollo.md)
 
-    0.2. [Pasando conceptos a código](./Capitulos/0_Objetos_Clases_Mensajes/0_2_Pasando_conceptos_a_código.md)
+    1.3. [Patrones y principios](./Capitulos/1_Objetos_Clases_Mensajes/1_4_Patrones_Principios.md)
 
-    0.3. [Desarrollo](./Capitulos/0_Objetos_Clases_Mensajes/0_3_Desarrollo.md)
-
-    0.4. [Patrones y principios](./Capitulos/0_Objetos_Clases_Mensajes/0_4_Patrones_Principios.md)
-
-    0.5. [Lecturas sugeridas](./Capitulos/0_Objetos_Clases_Mensajes/0_5_Lecturas_Sugeridas.md)
-
-1. [Ciclo de vida de los objetos](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
-
-    1.1. [Contenido](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_1_Contenido.md)
-
-    1.2. [Desarrollo](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_2_Desarrollo.md)
-
-    1.3. [Lecturas sugeridas](./Capitulos/1_Ciclo_de_vida_de_los_objetos/1_3_Lecturas_Sugeridas.md)
+    1.5. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/1_5_Lecturas_Sugeridas.md)
 
 2. [Tipos](./Capitulos/2_Tipos/2_1_Contenido.md#2-tipos)
 

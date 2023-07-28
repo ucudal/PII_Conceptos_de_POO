@@ -2,9 +2,9 @@
 
 [Conceptos de Programación Orientada a Objetos](../../)
 
-# 0. Objetos, Clases y Mensajes
+# 1. Objetos, Clases y Mensajes
 
-## 0.1 Contenido
+## 1.1 Contenido
 
 Los programas manejan ciertos datos usando cierta lógica o algoritmo. En un programa orientado a objetos hay un conjunto de **objetos** que colaboran pidiendo y prestando servicios.
 
@@ -254,7 +254,7 @@ Todos los recursos que un objeto consuma en el constructor -abrir archivos, cone
 
 Más adelante, cuando hablemos de [excepciones](https://github.com/ucudal/PII_Conceptos_de_POO/blob/master/Capitulos/4_Programar_Contra_Especificaciones/4_2_Excepciones.md), veremos que es importante asegurar que todos los recursos consumidos sean liberados, usando la cláusula [try…finally](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/try-finally), o la cláusula [using](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/using-statement).
 
-> [0.2 Pasando conceptos a código »](./0_2_Pasando_conceptos_a_código.md)
+> [1.2 Desarrollo »](./1_2_Desarrollo.md)
 
 <br/>
 
