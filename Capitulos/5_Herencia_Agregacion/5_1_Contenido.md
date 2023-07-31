@@ -15,8 +15,8 @@ En otras oportunidades es posible reconocer que objetos de una clase están siem
 
 Cuando decimos “una clase «es un» otra clase”, estamos diciendo “una clase más concreta «es un» caso particular de una clase más abstracta”. O dicho de otra forma “una clase más concreta hereda de otra más abstracta sus características”. Esto define entre las clases una relación de **herencia** o **generalización-especialización**.
 
-<details>
-<summary>🗒 Tarjeta: Generalización »</summary>
+<details open>
+<summary>🗒 Tarjeta: Generalización ±</summary>
 
 | Generalización |
 | ---- |
@@ -26,8 +26,8 @@ Cuando decimos “una clase «es un» otra clase”, estamos diciendo “una cla
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Relaciones «es un tipo de» »</summary>
+<details open>
+<summary>🗒 Tarjeta: Relaciones «es un tipo de» ±</summary>
 
 | Relaciones «es un tipo de» |
 | ---- |
@@ -38,8 +38,8 @@ Cuando decimos “una clase «es un» otra clase”, estamos diciendo “una cla
 
 La herencia genera ilusión de simplicidad: no es necesario repetir en la clase concreta los detalles de la clase abstracta; basta dar los detalles de la clase concreta y decir de cual hereda. Las características de las que hemos venido hablando son atributos y métodos. Una subclase es una clase que hereda atributos y métodos de otra clase y habitualmente agrega nuevos atributos y nuevos métodos. Una **superclase** es la clase a partir de la cual se hereda. Una **subclase** es la clase heredada.
 
-<details>
-<summary>🗒 Tarjeta: Clase base »</summary>
+<details open>
+<summary>🗒 Tarjeta: Clase base ±</summary>
 
 | Clase base |
 | ---- |
@@ -49,8 +49,8 @@ La herencia genera ilusión de simplicidad: no es necesario repetir en la clase 
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Clase sucesora »</summary>
+<details open>
+<summary>🗒 Tarjeta: Clase sucesora ±</summary>
 
 | Clase sucesora |
 | ---- |
@@ -62,8 +62,8 @@ La herencia genera ilusión de simplicidad: no es necesario repetir en la clase 
 
 Además de implementar la relación taxonómica de generalización-especialización, la herencia es una forma de reutilizar código, pues permite definir clases con atributos y métodos que no fue necesario escribir. No es correcto usar la herencia sólo por la reutilización, las clases también deben estar en relación taxonómica de generalización-especialización.
 
-<details>
-<summary>🗒 Tarjeta: Herencia »</summary>
+<details open>
+<summary>🗒 Tarjeta: Herencia ±</summary>
 
 | Herencia |
 | ---- |
@@ -72,8 +72,8 @@ Además de implementar la relación taxonómica de generalización-especializaci
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Herencia y reutilización »</summary>
+<details open>
+<summary>🗒 Tarjeta: Herencia y reutilización ±</summary>
 
 | Herencia y reutilización |
 | ---- |
@@ -82,8 +82,8 @@ Además de implementar la relación taxonómica de generalización-especializaci
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Herencia múltiple »</summary>
+<details open>
+<summary>🗒 Tarjeta: Herencia múltiple ±</summary>
 
 | Herencia múltiple |
 | ---- |
@@ -94,8 +94,8 @@ Además de implementar la relación taxonómica de generalización-especializaci
 
 Cuando decimos “un objeto «es parte de» otro objeto”, estamos diciendo “el todo es la suma de las partes”. O dicho de otra forma “un objeto agrega otros objetos”. Esto define una relación de **agregación** entre los objetos. También aquí hay una ilusión de simplicidad: podemos usar el todo haciendo caso omiso de las partes.
 
-<details>
-<summary>🗒 Tarjeta: Agregación »</summary>
+<details open>
+<summary>🗒 Tarjeta: Agregación ±</summary>
 
 | Agregación |
 | ---- |
@@ -105,8 +105,8 @@ Cuando decimos “un objeto «es parte de» otro objeto”, estamos diciendo “
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Relaciones «es parte de» »</summary>
+<details open>
+<summary>🗒 Tarjeta: Relaciones «es parte de» ±</summary>
 
 | Relaciones «es parte de» |
 | ---- |
@@ -121,8 +121,8 @@ La posibilidad de enviar un mensaje depende solamente del tipo del objeto que lo
 
 Lo contrario a encadenamiento dinámico es **encadenamiento estático** o **encadenamiento temprano**. En éste caso, el método a ejecutar se decide en tiempo de compilación en base al tipo de la variable a la cual se está enviando el mensaje.
 
-<details>
-<summary>🗒 Tarjeta: Encadenamiento dinámico o tardío »</summary>
+<details open>
+<summary>🗒 Tarjeta: Encadenamiento dinámico o tardío ±</summary>
 
 | Encadenamiento dinámico o tardío |
 | ---- |
@@ -131,8 +131,8 @@ Lo contrario a encadenamiento dinámico es **encadenamiento estático** o **enca
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Encadenamiento estático o temprano »</summary>
+<details open>
+<summary>🗒 Tarjeta: Encadenamiento estático o temprano ±</summary>
 
 | Encadenamiento estático o temprano |
 | ---- |

@@ -19,8 +19,8 @@ sólo lo que establece en el contrato y nada más.
 Los **tipos** son la realización o implementación de los contratos entre objetos. Un tipo es un conjunto de
 operaciones. Cada operación tiene una **firma** que la caracteriza, que incluye el nombre de la operación, los argumentos, y el resultado.
 
-<details>
-<summary>🗒 Tarjeta: Tipo »</summary>
+<details open>
+<summary>🗒 Tarjeta: Tipo ±</summary>
 
 | Tipo |
 | ---- |
@@ -29,8 +29,8 @@ operaciones. Cada operación tiene una **firma** que la caracteriza, que incluye
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Firma »</summary>
+<details open>
+<summary>🗒 Tarjeta: Firma ±</summary>
 
 | Firma |
 | ---- |
@@ -45,8 +45,8 @@ que los reciben, cómo solicitarlas, y qué ocurre cuando lo hacen <sup>1</sup>.
 
 La clase de un objeto que tiene un tipo cuenta con un método para todas y cada una de las operaciones contenidas en el tipo. La firma de cada método coincide exactamente con la de la operación correspondiente. En tal caso decimos que la clase **implementa** el tipo.
 
-<details>
-<summary>🗒 Tarjeta: Clases implementan tipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Clases implementan tipos ±</summary>
 
 | Clases implementan tipos |
 | ---- |
@@ -56,8 +56,8 @@ La clase de un objeto que tiene un tipo cuenta con un método para todas y cada 
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Mensajes y métodos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Mensajes y métodos ±</summary>
 
 | Mensajes y métodos |
 | ---- |
@@ -69,8 +69,8 @@ La clase de un objeto que tiene un tipo cuenta con un método para todas y cada 
 
 Cuando un objeto envía un mensaje a otro, el mensaje dice quién es el objeto **receptor**, cuál es el nombre de la operación, o **selector**, y cuáles son los valores de los argumentos, si los hubiere.
 
-<details>
-<summary>🗒 Tarjeta: Emisores y tipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Emisores y tipos ±</summary>
 
 | Emisores y tipos |
 | ---- |
@@ -79,8 +79,8 @@ Cuando un objeto envía un mensaje a otro, el mensaje dice quién es el objeto *
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Receptores y tipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Receptores y tipos ±</summary>
 
 | Receptores y tipos |
 | ---- |
@@ -91,8 +91,8 @@ Cuando un objeto envía un mensaje a otro, el mensaje dice quién es el objeto *
 
 Un objeto puede colaborar con muchos otros en diferentes oportunidades. Cada una de estas colaboraciones puede requerir un contrato diferente. Por eso un objeto puede tener más de un tipo. Al mismo tiempo varios objetos pueden colaborar exactamente de la misma manera cuando prestan exactamente los mismos servicios. Por eso varios objetos aún de diferentes clases pueden tener el mismo tipo.
 
-<details>
-<summary>🗒 Tarjeta: Un objeto, más de un tipo »</summary>
+<details open>
+<summary>🗒 Tarjeta: Un objeto, más de un tipo ±</summary>
 
 | Un objeto, más de un tipo |
 | ---- |
@@ -101,8 +101,8 @@ Un objeto puede colaborar con muchos otros en diferentes oportunidades. Cada una
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Un tipo, más de un objeto »</summary>
+<details open>
+<summary>🗒 Tarjeta: Un tipo, más de un objeto ±</summary>
 
 | Un tipo, más de un objeto |
 | ---- |
@@ -113,8 +113,8 @@ Un objeto puede colaborar con muchos otros en diferentes oportunidades. Cada una
 
 Algunos lenguajes de programación tienen construcciones sintácticas particulares para la declaración explícita de tipos, es decir, independientemente de la declaración de clases. De todas formas, una clase siempre declara implícitamente un tipo, pues a todos los efectos puedo ver el conjunto de operaciones declarados en la clase, cuando veo solamente la forma de los métodos e ignoro su contenido.
 
-<details>
-<summary>🗒 Tarjeta: Declaración de tipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Declaración de tipos ±</summary>
 
 | Declaración de tipos |
 | ---- |
@@ -125,8 +125,8 @@ Algunos lenguajes de programación tienen construcciones sintácticas particular
 
 Un tipo se construye alrededor de una abstracción. Una abstracción expresa las características esenciales de un objeto, que lo distinguen de todos los demás tipos de objetos, y que provee límites conceptuales claramente definidos, relativos a la perspectiva del usuario<sup>2</sup>. La abstracción es una de las formas más importantes de enfrentar la complejidad que tenemos las personas.
 
-<details>
-<summary>🗒 Tarjeta: Abstracción »</summary>
+<details open>
+<summary>🗒 Tarjeta: Abstracción ±</summary>
 
 | Abstracción |
 | ---- |
@@ -140,8 +140,8 @@ El objeto que recibe un mensaje no tiene porqué saber quién es el objeto que e
 
 De hecho, no es necesario que este otro objeto tenga exactamente el mismo tipo, alcanza con que tenga las mismas operaciones, pero podría tener más. Un tipo es **subtipo** de otro si el conjunto de operaciones contiene el conjunto de las del otro. Un tipo es **supertipo** de otro si el conjunto de operaciones está incluido en el del otro.
 
-<details>
-<summary>🗒 Tarjeta: Subtipo »</summary>
+<details open>
+<summary>🗒 Tarjeta: Subtipo ±</summary>
 
 | Subtipo |
 | ---- |
@@ -151,8 +151,8 @@ De hecho, no es necesario que este otro objeto tenga exactamente el mismo tipo, 
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Supertipo »</summary>
+<details open>
+<summary>🗒 Tarjeta: Supertipo ±</summary>
 
 | Supertipo |
 | ---- |
@@ -164,8 +164,8 @@ De hecho, no es necesario que este otro objeto tenga exactamente el mismo tipo, 
 
 Lo anterior se resumen en el **principio de sustitución**: en cualquier contexto en el que sea válido usar un objeto con un cierto tipo, se puede sustituir ese objeto por otro con un subtipo de ese tipo, porque puede recibir y procesar exactamente los mismos mensajes.
 
-<details>
-<summary>🗒 Tarjeta: Principio de sustitución »</summary>
+<details open>
+<summary>🗒 Tarjeta: Principio de sustitución ±</summary>
 
 | Principio de sustitución |
 | ---- |
@@ -176,8 +176,8 @@ Lo anterior se resumen en el **principio de sustitución**: en cualquier context
 
 Cuando una misma definición puede ser usada con diferentes tipos, decimos que la definición es **polimórfica**.
 
-<details>
-<summary>🗒 Tarjeta: Polimorfismo »</summary>
+<details open>
+<summary>🗒 Tarjeta: Polimorfismo ±</summary>
 
 | Polimorfismo |
 | ---- |
@@ -192,8 +192,8 @@ Una operación es polimórfica cuando puede ser usada con diferentes tipos, es d
 - La operación es polimórfica cuando puede actuar sobre un tipo y todos sus subtipos<sup>4</sup>. Para esto, objetos de diferentes tipos deben tener la capacidad de responder al mismo mensaje, de forma talque en un contexto determinado<sup>5</sup> puedan ser usados indistintamente.
 - La operación también es polimórfica cuando los argumentos y el resultado pueden ser usados con diferentes tipos<sup>6</sup>. En este caso se suele hablar de sobrecarga.
 
-<details>
-<summary>🗒 Tarjeta: Operación polimórfica »</summary>
+<details open>
+<summary>🗒 Tarjeta: Operación polimórfica ±</summary>
 
 | Operación polimórfica |
 | ---- |
@@ -202,8 +202,8 @@ Una operación es polimórfica cuando puede ser usada con diferentes tipos, es d
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Sobrecarga »</summary>
+<details open>
+<summary>🗒 Tarjeta: Sobrecarga ±</summary>
 
 | Sobrecarga |
 | ---- |

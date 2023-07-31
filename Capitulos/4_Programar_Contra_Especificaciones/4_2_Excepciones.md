@@ -28,8 +28,8 @@ También puede aparecer un error en nuestro programa que inadvertidamente es una
 
 La decisión de si un error es una excepción o no depende del contexto, la toma el objeto que envía el mensaje. Siguiendo con el ejemplo de un programa que usa un archivo, la clase que usamos para abrirlo va a generar una excepción si el archivo no existe, nuestro programa es el que decide pedir nuevamente su ubicación.
 
-<details>
-<summary>🗒 Tarjeta: Excepción »</summary>
+<details open>
+<summary>🗒 Tarjeta: Excepción ±</summary>
 
 | Excepción |
 | ---- |
@@ -150,7 +150,7 @@ Ingrese el genéro: Tecno
 No me gusta la música Tecno
 Ingrese el genéro: Tecno
 No me gusta la música Tecno
-Ingrese el genéro: Rock 
+Ingrese el genéro: Rock
 ```
 
 

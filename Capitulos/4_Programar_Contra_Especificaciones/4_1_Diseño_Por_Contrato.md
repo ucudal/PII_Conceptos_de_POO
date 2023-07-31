@@ -9,14 +9,14 @@
 
 Los desarrolladores de software son desafiados con aplicaciones cada vez más complejas y tecnologías más innovadoras. Al mismo tiempo se les exige mayor calidad en las aplicaciones. La calidad de un producto final de software se describe mejor por la combinación de factores internos y externos. Uno de esos factores es la corrección.
 
-Una pieza de software es correcta cuando satisface su especificación. Por lo tanto, la corrección es un concepto relativo, sin especificación no hay corrección. 
+Una pieza de software es correcta cuando satisface su especificación. Por lo tanto, la corrección es un concepto relativo, sin especificación no hay corrección.
 
 Gracias a la encapsulación, necesitamos enviar un mensaje a un objeto para acceder o cambiar su estado, o para activar alguno de sus comportamientos. Los mensajes que podemos mandar están especificados en el tipo de un objeto. Podemos decidir que la implementación provista por los métodos de la clase de un objeto es correcta respecto a las operaciones que están especificadas en el tipo del objeto, si para todas las operaciones declaradas en el tipo, la clase del objeto tiene un método cuya firma coincide con la de la correspondiente operación declarada en el tipo. ¿Alcanza con eso para especificar el estado y comportamiento de un objeto? Por supuesto que no. En ningún lado está especificado lo que hace una operación, es decir, cuál es el resultado de enviar un mensaje, cómo la operación cambia el estado del objeto, cuál tiene que ser el estado para poder enviar el mensaje. Necesitamos introducir un mecanismo que nos permite especificar qué hace una operación, para poder decidir cuando una implementación es correcta. Aquí es donde entran las fórmulas de corrección.
 
 Una fórmula de corrección para una operación A viene dada por la expresión **{P} A {Q}** que se lee “cualquier ejecución de A, que comience en un estado donde P se cumple, termina en un estado donde Q se cumple”. P es llamada **precondición** y Q es llamada **postcondición**.
 
-<details>
-<summary>🗒 Tarjeta: Afirmación »</summary>
+<details open>
+<summary>🗒 Tarjeta: Afirmación ±</summary>
 
 | Afirmación |
 | ---- |
@@ -25,8 +25,8 @@ Una fórmula de corrección para una operación A viene dada por la expresión *
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Precondición »</summary>
+<details open>
+<summary>🗒 Tarjeta: Precondición ±</summary>
 
 | Precondición |
 | ---- |
@@ -36,8 +36,8 @@ Una fórmula de corrección para una operación A viene dada por la expresión *
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Poscondición »</summary>
+<details open>
+<summary>🗒 Tarjeta: Poscondición ±</summary>
 
 | Poscondición |
 | ---- |
@@ -47,8 +47,8 @@ Una fórmula de corrección para una operación A viene dada por la expresión *
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Fórmula de corrección »</summary>
+<details open>
+<summary>🗒 Tarjeta: Fórmula de corrección ±</summary>
 
 | Fórmula de corrección |
 | ---- |
@@ -69,8 +69,8 @@ Recuerden que P<sub>1</sub> => P<sub>2</sub> si y sólo si ∼P<sub>1</sub> V P<
 |  F |  V |  V  |     V    |
 |  F |  F |  V  |     V    |
 
-<details>
-<summary>🗒 Tarjeta: Fortaleza/debilidad »</summary>
+<details open>
+<summary>🗒 Tarjeta: Fortaleza/debilidad ±</summary>
 
 | Fortaleza/debilidad |
 | ---- |
@@ -82,8 +82,8 @@ Recuerden que P<sub>1</sub> => P<sub>2</sub> si y sólo si ∼P<sub>1</sub> V P<
 
 El diseño por contrato está relacionado con el principio de sustitución de Liskov que vimos anteriormente. Un subtipo puede redefinir las precondiciones de las operaciones, pero sólo por otras más débiles. De esta forma, cuando en virtud del principio de sustitución, en un lugar donde se espera un objeto de un tipo T aparece un objeto de un subtipo S, un cliente que antes lograba cumplir las precondiciones de las operaciones de T también logrará que se cumplan las de las operaciones de S, porque las precondiciones de las operaciones de S son más débiles o a lo sumo iguales que las de las operaciones de T. En forma análoga, un subtipo S puede redefinir las postcondiciones de las operaciones de un tipo T por otras más fuertes. Un servidor que logre cumplir las postcondiciones de las operaciones de S también lograría que se cumplieras las postcondiciones de las operaciones de T, porque ahora las postcondiciones de las operaciones de S son más fuertes todavía o a lo sumo iguales que las de las operaciones de T
 
-<details>
-<summary>🗒 Tarjeta: Precondiciones/ subtipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Precondiciones/ subtipos ±</summary>
 
 | Precondiciones/ subtipos |
 | ---- |
@@ -92,8 +92,8 @@ El diseño por contrato está relacionado con el principio de sustitución de Li
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Poscondiciones/ subtipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Poscondiciones/ subtipos ±</summary>
 
 | Poscondiciones/ subtipos |
 | ---- |
@@ -104,8 +104,8 @@ El diseño por contrato está relacionado con el principio de sustitución de Li
 
 Además de precondiciones y postcondiciones para especificar una operación, es necesario introducir invariantes de clase para expresar las  ropiedades globales de una clase.
 
-<details>
-<summary>🗒 Tarjeta: Invariante [de tipo | clase] »</summary>
+<details open>
+<summary>🗒 Tarjeta: Invariante [de tipo | clase] ±</summary>
 
 | Invariante [de tipo/clase] |
 | ---- |
@@ -114,8 +114,8 @@ Además de precondiciones y postcondiciones para especificar una operación, es 
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Invariante/ subtipos »</summary>
+<details open>
+<summary>🗒 Tarjeta: Invariante/ subtipos ±</summary>
 
 | Invariante/ subtipos |
 | ---- |
@@ -128,8 +128,8 @@ Una invariante puede ser traducida como una precondición y una postcondición e
 
 Estamos en condiciones de hablar acerca de la corrección de un programa orientado a objetos. Como en un programa orientado a objetos sólo hay objetos que se envían mensajes unos a otros, y los mensajes que es posible enviar están definidos en el tipo de esos objetos, podemos decir que la especificación de un programa orientado a objetos es la suma o el conjunto de las especificaciones de los tipos de esos objetos. Por su lado, la especificación de un tipo es el conjunto de precondiciones, postcondiciones, e invariantes asociadas a ese tipo.
 
-<details>
-<summary>🗒 Tarjeta: Especificación »</summary>
+<details open>
+<summary>🗒 Tarjeta: Especificación ±</summary>
 
 | Especificación |
 | ---- |
@@ -140,8 +140,8 @@ Estamos en condiciones de hablar acerca de la corrección de un programa orienta
 
 Podemos decir que una clase que implementa uno o más tipos es correcta, cuando satisface la especificación de todos los tipos que implementa. Como la implementación de un programa orientado a objetos está en sus clases, podemos decir que un programa es correcto cuando todas sus clases son correctas.
 
-<details>
-<summary>🗒 Tarjeta: Corrección »</summary>
+<details open>
+<summary>🗒 Tarjeta: Corrección ±</summary>
 
 | Corrección |
 | ---- |
@@ -151,8 +151,8 @@ Podemos decir que una clase que implementa uno o más tipos es correcta, cuando 
 </details>
 <br/>
 
-<details>
-<summary>🗒 Tarjeta: Violación de afirmación »</summary>
+<details open>
+<summary>🗒 Tarjeta: Violación de afirmación ±</summary>
 
 | Violación de afirmación |
 | ---- |

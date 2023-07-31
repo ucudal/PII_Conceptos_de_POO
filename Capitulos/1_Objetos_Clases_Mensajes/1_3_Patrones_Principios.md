@@ -3,9 +3,9 @@
 [Conceptos de Programación Orientada a Objetos](../../)
 
 
-# 0. Objetos, Clases y Mensajes
+# 1. Objetos, Clases y Mensajes
 
-## 0.4 Patrones y Principios
+## 1.3 Patrones y Principios
 
 Vimos antes que cada objeto tiene una parte de los datos y una parte de la lógica de programa, la responsabilidad de conocer la parte de los datos que le corresponde y de hacer la parte de la lógica que le corresponde.
 
@@ -27,14 +27,14 @@ La clase `Phrase` tiene la responsabilidad las palabras, es razonable que tenga 
 
 Aunque este ejemplo es muy simple, separamos la responsabilidad de conocer las palabras de una frase de la responsabilidad de conocer el texto de las palabras; la primera responsabilidad es de la clase `Phrase` y la segunda de la clase `Word`.
 
-El texto de las palabras de una frase podría estar en la clase `Phrase`. Podríamos querer agregar un comportamiento para buscar palabras en el diccionario o cambiar la forma en la que se almacenan las palabras<sup>7</sup>, y en ese caso habría que cambiar la clase `Phrase`. Tal como está programado ahora, estos cambios los podríamos implementar en la clase `Word`, sin modificar la clase `Phrase`.
+El texto de las palabras de una frase podría estar en la clase `Phrase`. Podríamos querer agregar un comportamiento para buscar palabras en el diccionario o cambiar la forma en la que se almacenan las palabras<sup>1</sup>, y en ese caso habría que cambiar la clase `Phrase`. Tal como está programado ahora, estos cambios los podríamos implementar en la clase `Word`, sin modificar la clase `Phrase`.
 
 <br/>
 
-> [0.5 Lecturas sugeridas »](./0_5_Lecturas_Sugeridas.md)
+> [1.4 Lecturas sugeridas »](./1_4_Lecturas_Sugeridas.md)
 
 <br/>
 
-*******
+****
 
-_<sup>7</sup> Vean por ejemplo el [Patrón Flyweight](https://en.wikipedia.org/wiki/Flyweight_pattern)._
+_<sup>1</sup> Vean por ejemplo el [Patrón Flyweight](https://en.wikipedia.org/wiki/Flyweight_pattern)._

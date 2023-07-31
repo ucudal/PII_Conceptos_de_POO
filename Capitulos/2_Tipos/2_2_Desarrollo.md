@@ -240,8 +240,8 @@ Por ejemplo, puedo crear una página web que permita dar y quitar :+1: a un **IL
 
 Esta es una aplicación del principio de sustitución anunciado anteriormente. El principio fue enunciado por Bárbara Liskov en estos términos:
 
-<details>
-<summary>🗒 Tarjeta: Principio de sustitución en la redacción de Liskov »</summary>
+<details open>
+<summary>🗒 Tarjeta: Principio de sustitución en la redacción de Liskov ±</summary>
 
 | Principio de sustitución en la redacción de Liskov |
 | ---- |
