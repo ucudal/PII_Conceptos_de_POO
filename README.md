@@ -1,6 +1,7 @@
 ![UCU](./Assets/logo-ucu.png)
 # Conceptos de Programación Orientada a Objetos
-## FIT - Universidad Católica del Uruguay
+## Programación II
+### FIT - Universidad Católica del Uruguay
 
 <br/>
 
