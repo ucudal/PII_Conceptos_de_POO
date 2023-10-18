@@ -52,7 +52,7 @@ La clase compuesta sólo necesita conocer el tipo de la clase componente para po
 | Composición vs. herencia |
 | ---- |
 | La composición y delegación es una alternativa a la herencia. |
-| En el contexto de la reutilización toda implementación que use herencia se puede cambiar por una equivalent e que use composición y delegación. |
+| En el contexto de la reutilización toda implementación que use herencia se puede cambiar por una equivalente que use composición y delegación. |
 
 </details>
 <br/>
