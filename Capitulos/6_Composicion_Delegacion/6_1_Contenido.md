@@ -70,7 +70,7 @@ Es posible cambiar el comportamiento de una clase compuesta, cambiando la clase 
 | Por código | Declarativa |
 | Más código | Menos código |
 | Reuso selectivo | Reuso todo o nada |
-| 1 o más clases | 1 clase (simple) |
+| 1 o más clases | 1 clase (con herencia simple) |
 | Tipos sin relación | Impone subtipo |
 
 </details>
