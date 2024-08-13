@@ -148,7 +148,7 @@ public static void Main()
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v1/src/Program/Program.cs)
 
-El ejemplo anterior define un método de clase de nombre `AssignVariableWithObject`, sólo a efectos de poder mostrar como ejemplo la creación de un objeto de la clase `Person`.
+El ejemplo anterior define un método de clase de nombre `Main`, sólo a efectos de poder mostrar como ejemplo la creación de un objeto de la clase `Person`.
 
 En este ejemplo la sentencia `Person lucho` define una [variable](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/language-specification/variables#local-variables) llamada `lucho` capaz de contener instancias de la clase `Person`.
 
@@ -509,4 +509,3 @@ Las líneas punteadas representa que `Program` depende de `Person` pero nada má
 ****
 
 _<sup>1</sup> Esto es parcialmente cierto. El proceso de **garbage collection** no se ejecuta inmediatamente sino cada cierto tiempo cuando se cumplen ciertas condiciones_
-
