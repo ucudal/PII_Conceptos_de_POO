@@ -1,6 +1,13 @@
-![UCU](./Assets/logo-ucu.png)
+<img alt="UCU" src="https://www.ucu.edu.uy/plantillas/images/logo_ucu.svg"
+width="150"/>
+
+# Universidad Católica del Uruguay
+
+## Facultad de Ingeniería y Tecnologías
+
+### Programación II
+
 # Conceptos de Programación Orientada a Objetos
-## FIT - Universidad Católica del Uruguay
 
 <br/>
 

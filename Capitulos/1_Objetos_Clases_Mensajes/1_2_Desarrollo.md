@@ -5,7 +5,7 @@
 
 # 1. Objetos, Clases y Mensajes
 
-## 1.2 Pasando conceptos a código
+## 1.2 Desarrollo
 
 Ahora vamos a ver cómo se implementan en un lenguaje de programación los conceptos que definimos en el capítulo anterior. En este curso vamos a utilizar un lenguaje llamado C# -que se pronuncia "si yarp"-.
 
