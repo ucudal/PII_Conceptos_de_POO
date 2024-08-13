@@ -46,7 +46,7 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     1.2. [Desarrollo](./Capitulos/1_Objetos_Clases_Mensajes/1_2_Desarrollo.md)
 
-    1.3. [Patrones y principios](./Capitulos/1_Objetos_Clases_Mensajes/1_3_Patrones_Principios.md)
+    1.3. [Guías para la asignación de responsabilidades](./Capitulos/1_Objetos_Clases_Mensajes/1_3_Guias.md)
 
     1.4. [Lecturas sugeridas](./Capitulos/1_Objetos_Clases_Mensajes/1_4_Lecturas_Sugeridas.md)
 

@@ -4,6 +4,6 @@
 
 1.2. [Desarrollo](./1_2_Desarrollo.md)
 
-1.3. [Patrones y principios](./1_3_Patrones_Principios.md)
+1.3. [Guías para la asignación de responsabilidades](./1_3_Guias.md)
 
 1.4. [Lecturas sugeridas](./1_4_Lecturas_Sugeridas.md)

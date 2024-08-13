@@ -1,7 +1,4 @@
-![UCU](../../Assets/logo-ucu.png)
-
 [Conceptos de Programación Orientada a Objetos](../../)
-
 
 # 1. Objetos, Clases y Mensajes
 
@@ -504,7 +501,7 @@ Program..>Person
 
 Las líneas punteadas representa que `Program` depende de `Person` pero nada más, la referencias a esas clases son simples variables definidas localmente en el método `IntroducePersons()`.
 
-> [1.3 Patrones y principios »](./1_3_Patrones_Principios.md)
+> [1.3 Guías para la asignación de responsabilidades »](./1_3_Guias.md)
 
 ****
 

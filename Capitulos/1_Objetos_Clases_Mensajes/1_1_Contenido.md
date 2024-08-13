@@ -1,5 +1,3 @@
-![UCU](../../Assets/logo-ucu.png)
-
 [Conceptos de Programación Orientada a Objetos](../../)
 
 # 1. Objetos, Clases y Mensajes
