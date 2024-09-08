@@ -1,7 +1,4 @@
-![UCU](../../Assets/logo-ucu.png)
-
 [Conceptos de Programación Orientada a Objetos](../../)
-
 
 # 2. Tipos
 
@@ -254,7 +251,7 @@ En nuestro caso, T sería **ILikeable**, y los subtipos S serían **Car** y **Ac
 
 <br>
 
-> [2.3 Lecturas Sugeridas »](./2_3_Lecturas_Sugeridas.md)
+> [2.3 Guías para la asignación de responsabilidades »](./2_3_Guias.md)
 
 </br>
 

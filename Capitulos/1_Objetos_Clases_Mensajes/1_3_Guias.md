@@ -1,6 +1,5 @@
 [Conceptos de Programación Orientada a Objetos](../..)
 
-
 # 1. Objetos, Clases y Mensajes
 
 ## 1.3 Guías para distribuir responsabilidades
@@ -60,7 +59,7 @@ public class Person
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v6/src/Library/Person.cs#L73-L76)
 
-> [!IMPORTANT]
+> [!TIP]
 > Lee más sobre Expert
 > [aquí](https://github.com/ucudal/PII_Principios_Patrones/blob/master/Expert.md).
 
@@ -117,7 +116,7 @@ public static class OverweigthCalculator
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v7/src/Library/OverweigthCalculator.cs)
 
-> [!IMPORTANT]
+> [!TIP]
 > Lee más sobre SRP
 > [aquí](https://github.com/ucudal/PII_Principios_Patrones/blob/master/SRP.md).
 
