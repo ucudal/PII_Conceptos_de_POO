@@ -12,7 +12,7 @@ derecho de implementar sólo los métodos incluidos en el tipo.
 A continuación veremos algunas guías para distribuir responsabiliades basándos
 en el concepto de tipos. Estas guías buscan que cuando un objeto colabora con
 otro, el objeto que pide la colaboración no dependa de la clase del objeto, sino
-que dependa del tipo del objeto. Al principio puede parer lo mismo, pero si
+que dependa del tipo del objeto. Al principio puede parecer lo mismo, pero si
 depende del tipo, cualquier objeto que tengan ese tipo —aunque sea de diferentes
 clases— puede colaborar. Esto crea programas más fáciles de extender.
 
