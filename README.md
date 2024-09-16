@@ -90,6 +90,6 @@ En la presentación de los temas se utilizan fragmentos de código en C#. Como y
 
     6.2. [Presentación](./Capitulos/6_Composicion_Delegacion/6_2_Presentacion.md)
 
-    6.3. [Lecturas Sugeridas](./Capitulos/6_Composicion_Delegacion/6_3_Lecturas_Sugeridas.md)
+    6.3. [Lecturas Sugeridas](./Capitulos/6_Composicion_Delegacion/6_4_Lecturas_Sugeridas.md)
 
 7. [Bibliografía](./Capitulos/7_Bibliografia/Bibliografia.md#7-bibliografia)

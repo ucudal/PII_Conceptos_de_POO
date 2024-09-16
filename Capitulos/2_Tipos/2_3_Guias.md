@@ -22,12 +22,12 @@ Decimos que una operación es **polimórfica** cuando es implementada por dos o
 más objetos de diferentes tipos. Relacionado con esto está esta guía llamada
 **Polymorfism**.
 
-## Problema
+#### Problema
 
 > ¿Cómo manejar alternativas de comportamiento basadas en el tipo? ¿Cómo crear
 > componentes de software conectables?
 
-## Solución
+#### Solución
 
 > Cuando alternativas o comportamientos relacionados varían según el tipo, asignar
 > las responsabilidades por el comportamiento usando operaciones polimórficas a

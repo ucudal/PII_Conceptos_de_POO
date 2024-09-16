@@ -1,11 +1,8 @@
-![UCU](../../Assets/logo-ucu.png)
-
 [Conceptos de Programación Orientada a Objetos](../../)
-
 
 # 6. Composición - Delegación
 
-## 6.3 Lecturas sugeridas
+## 6.4 Lecturas sugeridas
 
 - Martin, Robert, Template Method & Strategy: Inheritance vs. Delegation, capítulo 15 de The Principles, Patterns, and Practices of Agile Software Development, Prentice Hall, 2002.
 

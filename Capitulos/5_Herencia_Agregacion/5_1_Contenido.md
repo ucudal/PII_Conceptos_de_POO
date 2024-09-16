@@ -9,7 +9,7 @@
 
 En ciertas oportunidades es posible reconocer una relación de clasificación taxonómica entre diversas clases. En esa relación es posible afirmar que una clase «es un tipo de» o «es un» otra clase. Un puma «es un» mamífero y un mamífero «es un» animal. Un tero «es un» ave y un ave «es un» animal pero un tero no es un mamífero.
 
-Entre las clases así clasificadas es posible reconocer características compartidas por varias de ellas y carac- terísticas exclusivas de cada una. Es posible extraer esas características compartidas de todas las clases que las comparten a una nueva clase, más general o más abstracta, y dejar en las demás clases solamente las características exclusivas de cada una.
+Entre las clases así clasificadas es posible reconocer características compartidas por varias de ellas y características exclusivas de cada una. Es posible extraer esas características compartidas de todas las clases que las comparten a una nueva clase, más general o más abstracta, y dejar en las demás clases solamente las características exclusivas de cada una.
 
 En otras oportunidades es posible reconocer que objetos de una clase están siempre formados por objetos de otras clases. En esa relación es posible afirmar que un objeto «está compuesto por» otro u otros objetos o que «es parte de» otro objeto.
 
@@ -144,6 +144,53 @@ Lo contrario a encadenamiento dinámico es **encadenamiento estático** o **enca
 El encadenamiento dinámico es necesario para soportar polimorfismo, debido a que en otro caso la operación siempre se ejecutaría de una forma, pues el método a ejecutar se define una única vez al momento de compilar. En algunos lenguajes, es posible indicar al compilador qué tipo de encadenamiento queremos utilizar en cada caso<sup>25</sup>; en los lenguajes donde eso no es posible, el encadenamiento es siempre dinámico.
 
 <br/>
+
+<details open>
+<summary>🗒 Tarjeta: Composición vs. herencia ±</summary>
+
+| Composición vs. herencia |
+| ---- |
+| La composición y delegación es una alternativa a la herencia. |
+| En el contexto de la reutilización toda implementación que use herencia se puede cambiar por una equivalente que use composición y delegación. |
+
+</details>
+<br/>
+
+Es posible cambiar el comportamiento de una clase compuesta, cambiando la clase
+componente. Esto se puede lograr aún dinámicamente.
+
+<details open>
+<summary>🗒 Tarjeta: Composición vs Herencia ±</summary>
+
+| Composición | Herencia |
+| :----: | :----: |
+| Caja negra | Caja blanca |
+| Dinámica | Estática |
+| Ejecución | Compilación |
+| Por código | Declarativa |
+| Más código | Menos código |
+| Reuso selectivo | Reuso todo o nada |
+| 1 o más clases | 1 clase (con herencia simple) |
+| Tipos sin relación | Impone subtipo |
+
+</details>
+<br/>
+
+| Composición y delegación | Herencia |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| La composición es reutilización de caja negra.  No es necesario conocer los detalles internos de la implementación para lograr la reutilización efectiva. Una clase diseñada para ser reutilizada  por composición y delegación está siempre  encapsulada. | La herencia es reutilización de caja blanca.  Es necesario conocer los detalles internos  de la implementación para lograr la reutilización efectiva. Una clase diseñada para ser reutilizada por herencia está encapsulada para los clientes pero no para los sucesores. |
+| La composición es dinámica, puede cambiar en tiempo de ejecución. Composición y delegación pueden lograr que el comportamiento de los objetos así definidos cambie en tiempo de ejecución. | La herencia es estática, se define en tiempo de compilación. El comportamiento de los objetos así definidos es inmutable. |
+| La composición y delegación requieren código adicional, agregado a mano por el programador. El tamaño del código aumenta, como así también la posibilidad de introducir errores, los requisitos de testeo, etc. | La herencia es declarativa. Una palabra clave basta para lograrlo. |
+| La composición y delegación permiten reutilizar estado y comportamiento en forma selectiva | La herencia reutiliza todo, no puede elegir qué heredar y qué no[^1] |
+| La composición y delegación puede reutilizar más de una clase simultáneamente | La herencia simple solo permite reutilizar una clase a la vez; la herencia múltiple permite reutilizar más de una clase simultáneamente[^2] |
+| La composición y delegación no impone ninguna relación entre los tipos de la clase compuesta y  las clases componentes; la clase compuesta puede  implementar varios tipos | La herencia impone una relación de supertipo/subtipo entre la clase base y la clase sucesora; ésta tiene  al menos el tipo de aquélla, aunque puede implementar varios tipos más |
+
+[^1]: En algunos lenguajes de programación, la herencia es selectiva, la clase
+sucesora puede decidir no heredar algunos atributos o métodos. Esto implica que
+la relación entre clase y subclase no necesariamente es también una relación
+entre tipo y subtipo, lo que conduce a la violación del principio de
+sustitución. Lo consideramos una anomalía y no debe ser tenido en cuenta.
+[^2]: Lamentablemente son pocos los lenguajes que implementan herencia múltiple.
 
 > [5.2 Desarrollo »](./5_2_Desarrollo.md)
 
