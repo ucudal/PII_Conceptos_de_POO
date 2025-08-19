@@ -4,12 +4,24 @@
 
 ## 1.2 Desarrollo
 
-Ahora vamos a ver cómo se implementan en un lenguaje de programación los conceptos que definimos en el capítulo anterior. En este curso vamos a utilizar un lenguaje llamado C# -que se pronuncia "si yarp"-.
+Ahora vamos a ver cómo se implementan en un lenguaje de programación los
+conceptos que definimos en el capítulo anterior. En este curso vamos a utilizar
+un lenguaje llamado C# -que se pronuncia "si yarp"-.
 
-Repasamos la definición de clase:
+Repasemos la definición de abstracción:
 
-> **Clase**
->
+> Una **abstracción** expresa las características **esenciales** de un objeto,
+> que lo distinguen de todos los demás tipos de objetos, y que provee límites
+> conceptuales claramente definidos, relativos a la perspectiva del usuario.
+
+Veamos por ejemplo qué características esenciales podemos abstraer de una
+persona; hay muchas pero para este caso nos quedamos con que las personas tienen
+un nombre, un apellido, y pueden saludar a otras personas. Obviamente que las
+personas tienen muchas otras características como la edad, pero para este
+ejemplo las vamos a omitir.
+
+Repasemos la definición de clase:
+
 > Una **clase** es una **plantilla** o **molde** para un conjunto de objetos que comparten los mismos atributos, métodos, relaciones y semántica.
 
 Veamos por ejemplo cómo declaramos una [clase](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/class) `Person` en C# para representar personas:
@@ -56,41 +68,92 @@ Recordemos las definiciones de atributo y de estado:
 
 > **Estado**
 >
-> El **estado** de un objeto son los **datos** y los **valores** de los datos que el objeto **conoce** y están almacenados en los **atributos**.
+> El **estado** de un objeto son los **datos** y los **valores** de los datos
+> que el objeto **conoce** y están almacenados en los **atributos**.
 
-Digamos que nuestra clase `Person` tiene la responsabilidad de conocer el nombre y el apellido de una persona. La clase debería tener un atributo para representar el nombre -en inglés "name"- y otro para representar el apellido -en inglés "family name"-:
+Antes dijimos que al crear una abstracción de las personas nos interesan las
+características del nombre y del apellido; y también que las personas pueden
+saludar a otras personas.
+
+Digamos entonces que nuestra clase `Person` tiene la responsabilidad de conocer
+el nombre y el apellido de las personas. La clase debería tener un atributo para
+representar el nombre -en inglés *name*- y otro para representar el apellido -en
+inglés *family name*-:
 
 ```c#
 public class Person
 {
-    private string name;
-    private string familyName;
+    public string Name { get; set; }
+    public string FamilyName { get; set; }
 }
 ```
 
-Ahora la clase `Person` tiene un atributo `name` y otro `familyName`; ambos son de tipo `String`, es decir, [cadenas de caracteres](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/strings/) -en C# es necesario declarar el tipo de los atributos-. Los atributos se declaran dentro de la definición de la clase, es decir, dentro de los corchetes `{`  y `}` que siguen a `class Person`.
+Ahora la clase `Person` tiene una
+[propiedad](https://learn.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/properties)
+`Name` y otra `FamilyName`; ambas son de tipo `String`, es decir, [cadenas de
+caracteres](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/strings/)
+-en C# es necesario declarar el tipo de los atributos-. Los atributos se
+declaran dentro de la definición de la clase, es decir, dentro de los corchetes
+`{`  y `}` que siguen a `class Person`.
 
-> ❓ ¿Por qué se escribe `string name` con `string` en minúscula y luego dice que el tipo es `String` con mayúscula?
->
-> Con minúscula `string` es una palabra clave del lenguaje, un alias para la clase `String` con mayúscula. Al usar la palabra clave `string` se evita tener que indicar dónde está definida la clase `String` agregando el espacio de nombres `System`.
+Lo que sigue al nombre de la propiedad es `{ get; set; }`. Esto indica que la
+propiedad se puede leer con `get` y escribir con `set`. Más adelante veremos más
+detalles sobre los *getters* y los *setters*, y veremos también que las
+propiedades no son la única forma de declarar el estado de un objeto en una
+clase en C#.
 
-Esta forma de declarar atributos en C# es mediante [variables de instancia](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/language-specification/variables#instance-variables). En la declaración anterior de la clase `Person`, `name` es una variable de instancia [privada](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/private) de tipo `string`, y `familyName` es otra variable de instancia también privada del mismo tipo. Veremos más adelante que esta no es la única forma de declarar atributos en C#.
+Recordemos la definición de comportamiento:
 
-Repasemos la definición de encapsulacion:
+> Cada objeto puede tener la **responsabilidad** de hacer una parte de la lógica
+> del programa. El **comportamiento** de un objeto son las cosas que el objeto
+> **hace** y está implementado en los **métodos**.
 
-> **Encapsulación**
->
-> La **encapsulación** es el resultado de ocultar todos los detalles acerca de la implementación de las responsabilidades.
+Antes, al hablar de la abstracción que hacíamos de las personas, decíamos que
+las personas pueden saludar a otras personas. Esto es un comportamiento, que en
+C# se implementa con los
+[métodos](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/methods).
 
-La palabra clave `private` en la declaración de los atributos indica que el atributo es accesible sólo por objetos de la propia clase en la que se define; es decir, el detalle de cómo se implementan las responsabilidades de conocer el nombre y el apellido de las personas está oculto.
+```c#
+public class Person
+{
+    public string Name { get; set; }
+    public string FamilyName { get; set; }
+    public void SayHiTo(Person person)
+    {
+        Console.WriteLine("Hola " + person.Name + ", soy " + this.Name);
+    }
+}
+```
 
-La clase `Person` debería permitir obtener y cambiar el nombre y el apellido de la personas. Estas son responsabilidades de hacer o comportamiento. Recordemos la definición de comportamiento:
+Veamos la declaración del método con el que un objeto de esta clase saluda a
+otro: `void SayHiTo(Person person)`. La palabra clave `void` indica que el
+método no retorna [ningún
+valor](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/void);
+el identificador `SayHiTo` es el nombre del método, también llamado **selector**; este método tiene un
+[parámetro](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)
+llamado `person` de tipo `Person` que va entre los paréntesis `()` que siguen al
+nombre del método -en C# es necesario declarar el tipo de los parámetros-. En
+este caso la implementación de ese método consiste en imprimir en la consola un
+saludo.
 
-> **Comportamiento**
->
-> Cada objeto puede tener la **responsabilidad** de hacer una parte de la lógica del programa. El **comportamiento** de un objeto son las cosas que el objeto **hace** y está implementado en los **métodos**.
+La implementación del método es el código que está entre los corchetes `{`  y
+`}` que siguen a la firma del método. La expresión `person.Name` permite acceder
+al valor de la propiedad `Name` del objeto recibido como parámetro. Luego en
+`this.Name` se accede a la propiedad `Name` del objeto que está ejecutando el
+método; nos referimos al [objeto que está
+ejecutando](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/this)
+el método con la palabra clave `this`.
 
-Agreguemos entonces a la clase `Person` los [métodos](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/methods) que implementan las responsabilidades de obtener el nombre -en inglés "get name"-, cambiar el nombre -en inglés "set name"-, etc.:
+Como los métodos representan "acciones", los nombres de los métodos contienen
+siempre verbos —acciones— o verbos y sustantivos —acciones sobre elementos—.
+<!--
+
+
+
+Agreguemos entonces a la clase `Person` los
+[métodos](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/methods)
+que implementan las responsabilidades de obtener el nombre -en inglés "get
+name"-, cambiar el nombre -en inglés "set name"-, etc.:
 
 ```c#
 public class Person
@@ -118,16 +181,13 @@ public class Person
 ```
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v1/src/Library/Person.cs)
+ -->
 
-La palabra clave `string` en `string GetName()` indica que el método retorna una cadena de caracteres -en C# es necesario declarar el tipo del resultado de los métodos-; el identificador `GetName` es el nombre del método; los paréntesis `()` indican que el método no tiene parámetros. Llamaremos "firma de un método" al conjunto de resultado, nombre y parámetros de un método.
+<!--
 
-La implementación del método es el código que está entre los corchetes `{`  y `}` que siguen a la firma del método. En este caso la implementación consiste de la palabra clave `return`, que indica que el método [retorna](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/return) la expresión que está a continuación, seguida de `this.name` que indica la variable de instancia `name` del objeto que está ejecutando el método; nos referimos al [objeto que está ejecutando](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/this) el método con la palabra clave `this`.
+En este caso la implementación de ese método consiste en asignar el valor a la variable de instancia `name` del objeto que está ejecutando el método, con el valor del parámetro `value`, mediante el operador `=`.
 
-Como los métodos representan "acciones", los nombres de los métodos contienen siempre verbos —acciones— o verbos y sustantivos —acciones sobre elementos—.
-
-La palabra clave `void` en `void SetName(string value)` indica que el método no retorna [ningún valor](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/void); el identificador `SetName` es el nombre del método; este método tiene un [parámetro](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters) llamado `value` de tipo `string` que va entre los paréntesis `()` que siguen al nombre del método -en C# es necesario declarar el tipo de los parámetros-. En este caso la implementación de ese método consiste en asignar el valor a la variable de instancia `name` del objeto que está ejecutando el método, con el valor del parámetro `value`, mediante el operador `=`.
-
-> :warning: El operador `=` no se lee "igual" sino "asignar", y sirve para "copiar" el valor que está a la derecha a la variable que está a la izquierda.
+> :warning: El operador `=` no se lee "igual" sino "asignar", y sirve para "copiar" el valor que está a la derecha a la variable que está a la izquierda. -->
 
 Vean que todos los métodos en este ejemplo están declarados con la palabra clave `public`, para que otros objetos puedan conocer y cambiar el nombre y apellido de las personas. La forma como eso sucede, es decir, el detalle de implementación de los métodos, es desconocido para los objetos de otras clases, por eso decimos que está encapsulado.
 
@@ -138,24 +198,40 @@ public static void Main()
 {
     Person lucho;
     lucho = new Person();
-    lucho.SetName("Luis");
-    lucho.SetFamilyName("Suárez");
+    lucho.Name = "Luis";
+    lucho.FamilyName = "Suárez";
 }
 ```
 
-> [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v1/src/Program/Program.cs)
+<!-- > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v1/src/Program/Program.cs) -->
 
-El ejemplo anterior define un método de clase de nombre `Main`, sólo a efectos de poder mostrar como ejemplo la creación de un objeto de la clase `Person`.
+El ejemplo anterior se define un método de clase de nombre `Main`, sólo a
+efectos de poder mostrar como ejemplo la creación de un objeto de la clase
+`Person`.
 
-En este ejemplo la sentencia `Person lucho` define una [variable](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/language-specification/variables#local-variables) llamada `lucho` capaz de contener instancias de la clase `Person`.
+En este ejemplo, la sentencia `Person lucho` define una
+[variable](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/language-specification/variables#local-variables)
+llamada `lucho` capaz de contener instancias de la clase `Person`.
 
-La variable en este momento está vacía, no tiene ningún objeto y su valor es `null`. Como vimos antes, `null` es una palabra clave en C#, que se usa para indicar que no hay ningún objeto asignado a una variable.
+La variable en este momento está vacía, no tiene ningún objeto y su valor es
+`null`. `null` es una palabra clave en C#, que se usa para indicar que no hay
+ningún objeto asignado a una variable; veremos más adelante que es muy
+importante saber si hay un objeto asignado a una variable.
 
-La sentencia que está a la derecha del signo `=` en la sentencia `lucho = new Person()` crea una nueva instancia de la clase Word mediante el constructor predeterminado. Cuando usamos este constructor las variables de instancia `name` y `familyName` tienen el valor `null`.
+La sentencia `new Person()` que está a la derecha del signo `=` en la sentencia
+`lucho = new Person()` crea una nueva instancia de la clase `Person` mediante el
+constructor predeterminado. Cuando usamos este constructor las propiedades
+`Name` y `FamilyName` tienen el valor `null`.
 
-Luego enviamos al objeto en la variable `lucho` el mensaje con selector `SetName("Luis")`. Esto hace que se ejecute el método de nombre `SetName` que vimos antes, pasándole como parámetro el valor `"Luis"`. Como resultado de la ejecución de ese método, según analizamos antes, se asignará a la variable de instancia `name` del objeto contenido en `lucho` el valor `"Luis"`. Algo análogo ocurre con el mensaje con selector `SetFamilyName("Suárez")`, que hará que se ejecute el método de nombre `SetFamilyName` con el parámetro `"Suárez"`, que como resultado asignará el valor del parámetro a la variable de instancia `FamilyName` del objeto contenido en `lucho`.
+Luego asignamos a la propiedad `Name` del objeto el valor `"Luis"` y a la
+propiedad `FamilyName` del objeto contenido le asignamos el valor `"Suárez"`.
 
-Como es muy común que los atributos se implementen mediante variables de instancia privadas y métodos públicos que permiten obtener y cambiar sus valores, C# provee un mecanismo simplificado llamado [propiedades](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/properties). Veamos como queda la declaración de la clase `Person` utilizando propiedades en lugar de variables de instancia:
+## Propiedades y variables de instancia
+
+Las propiedades son una forma cómoda de declarar el estado. Tras bambalinas, el
+valor de las propiedades en C# se guarda en una variable de instancia del mismo
+tipo que la propiedad, que está encapsulada. La declaración de la clase `Person`
+variables de instancia en lugar de propiedades sería así:
 
 ```c#
 public class Person
@@ -168,6 +244,39 @@ public class Person
 }
 ```
 
+Nota que los *getters* y los *setters* son en realidad métodos. Cuando declaras
+propiedades como lo hicimos antes, no necesitas escribirlos. Pero hay veces en
+las que sí los necesitas.
+
+Tenemos el nombre y el apellido de las personas, pero no tenemos su nombre
+completo. Agreguemos a las personas esa nueva característica, que podrá ser una
+propiedad que una las otras dos, el nombre más el apellido; sin embargo, a
+diferencia de las otras propiedades, no podríamos cambiar el nombre completo. En
+ese caso, la propiedad tiene dos características diferentes a las que vimos
+antes:
+
+* No tiene `setter`.
+
+* El `getter` tiene codigo, el necesario para unir el nombre con el apellido.
+
+Veamos la clase a continuación:
+
+```csharp
+public class Person
+{
+    ...
+    public string FullName
+    {
+        get { return this.Name + " " + this.FamilyName; }
+    }
+    ...
+}
+```
+
+En el codigo del `getter` la palabra clave `return` indica que el método retorna
+un valor.
+
+<!--
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v2/src/Library/Person.cs)
 
 Esta forma de declarar los atributos para el nombre y el apellido de la persona es equivalente a la anterior. Ahora la clase `Person` tiene un atributo `Name` y otro `FamilyName`; ambos son de tipo `String`. Las propiedades se declaran dentro de la definición de la clase, es decir, dentro de los corchetes `{`  y `}` que siguen a `class Person`, al igual que las variables de instancia.
@@ -184,11 +293,11 @@ public static void Main()
     lucho.Name = "Luis";
     lucho.FamilyName = "Suárez";
 }
-```
+``` -->
 
-> [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v2/src/Program/Program.cs)
+<!-- > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v2/src/Program/Program.cs) -->
 
-Aunque `lucho.Name = "Luis"` parezca la asignación de un valor a una variable de instancia, en realidad se termina ejecutando en tiempo de ejecución el código en el "setter" de la propiedad `Name`, es decir, el código de la cláusula `set` de esa propidad, o sea `this.name = value`. En esta expresión `value` es una palabra reservada que referencia al objeto que se está asignado a la propiedad, en este caso, la instancia de la clase `String` con valor `"Luis"`.
+<!-- Aunque `lucho.Name = "Luis"` parezca la asignación de un valor a una variable de instancia, en realidad se termina ejecutando en tiempo de ejecución el código en el "setter" de la propiedad `Name`, es decir, el código de la cláusula `set` de esa propidad, o sea `this.name = value`. En esta expresión `value` es una palabra reservada que referencia al objeto que se está asignado a la propiedad, en este caso, la instancia de la clase `String` con valor `"Luis"`.
 
 De esta forma podemos utilizar las propiedades de forma equivalente a como usaríamos variables de instancia, pero la forma como se obtiene o modifica el valor de esas variables de instancia, está encapsulada en los "getters" y los "setters" cuya implementación es interna a la clase, al igual que la variables de instancia privada, sólo se puede obtener y cambiar su valor a través esas implementaciones.
 
@@ -215,31 +324,92 @@ public static void Main()
     lucho.Name = "Luis";
     lucho.FamilyName = "Suárez";
 }
+``` -->
+
+Antes te dijimos que si a una variable no se le asigna un objeto, la variable
+vale `null`. Es importante que estés seguro, antes de tratar de usar una
+variable, que no sea `null`.
+
+En el método `void SayHiTo(Person)` que vimos antes, no estamos controlado que
+el parámetro `person` no sea null, pero deberíamos hacerlo.
+
+La versión correcta del método debería ser así:
+
+```csharp
+public void SayHiTo(Person person)
+{
+    if (person != null)
+    {
+        Console.WriteLine("Hola " + person.Name + ", soy " + this.Name);
+    }
+}
 ```
 
-> [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v2/src/Program/Program.cs)
+La condición `person != null` es verdadera sólo si person no es `null`; en ese
+caso sí se ejecuta el código en el `if`, pues va a funcionar `person.Name`. Si
+`person` fuera null, `person.Name` daría un error, más precisamente, una
+excepción. Pero las excepciones las veremos luego.
 
 ## ¿Dónde "viven" los objetos?
 
-Para poder enviar un mensaje a un objeto, tenemos que poder tener acceso a ese objeto. Vimos antes en el ejemplo cómo tener acceso a un objeto mediante la variable local `lucho`, pero hay otras formas:
+Para poder enviar un mensaje a un objeto, tenemos que poder tener acceso a ese
+objeto. Vimos antes en el ejemplo cómo tener acceso a un objeto mediante la
+variable local `lucho`, pero hay otras formas:
 
-- **Literales**: En varios lenguajes de programación, incluyendo C#, es posible tener acceso a un objeto mediante un literal. En los ejemplos anteriores, `"Luis"` es una instancia de la clase `String`. `42`, `0x2A`, o `0b_0010_1010` son ejemplos de literales de la clase `Int32`, en notación decimal, hexadecimal, y binaria respectivamente. `true` y `false` son literales de la clase `Boolean`. `'j'`, `'\u006A'` o `\x006A'` son ejemplos de literales de la clase `Char` en notación ASCII, como secuencia de escape Unicode y como secuencia de escape hexadecimal respectivamente.
+- **Literales**: En varios lenguajes de programación, incluyendo C#, es posible
+  tener acceso a un objeto mediante un literal. En los ejemplos anteriores,
+  `"Luis"` es una instancia de la clase `String`. `42`, `0x2A`, o `0b_0010_1010`
+  son ejemplos de literales de la clase `Int32`, en notación decimal,
+  hexadecimal, y binaria respectivamente. `true` y `false` son literales de la
+  clase `Boolean`. `'j'`, `'\u006A'` o `\x006A'` son ejemplos de literales de la
+  clase `Char` en notación ASCII, como secuencia de escape Unicode y como
+  secuencia de escape hexadecimal respectivamente.
 
-- **Variables de instancia**: Hemos visto que el estado de un objeto se representa en variables de instancia, o en el caso de C# en propiedades. Por ejemplo, `private string name` en la clase `Person` anterior, es una variable de instancia de la clase `String`.
+- **Variables de instancia**: Hemos visto que el estado de un objeto se
+  representa en variables de instancia, o en el caso de C# en propiedades. Por
+  ejemplo, `private string name` en la clase `Person` anterior, es una variable
+  de instancia de la clase `String`.
 
-- **Variables locales**: En cualquier bloque de código, ya sea el cuerpo de un método, o el de estructura de control de flujo `if`, `for`, `foreach`, etc. es posible declarar variables locales a ese bloque; esto quiere decir que la variable sólo se puede usar dentro del bloque. En el ejemplo anterior, `Person lucho` declara una variable llamada `lucho` de tipo `Person`. Es posible declarar e inicializar una variable en la misma línea de código, escribiendo `Person lucho = new Person()`.
+- **Variables locales**: En cualquier bloque de código, ya sea el cuerpo de un
+  método, o el de estructura de control de flujo `if`, `for`, `foreach`, etc. es
+  posible declarar variables locales a ese bloque; esto quiere decir que la
+  variable sólo se puede usar dentro del bloque. En el ejemplo anterior, `Person
+  lucho` declara una variable llamada `lucho` de tipo `Person`. Es posible
+  declarar e inicializar una variable en la misma línea de código, escribiendo
+  `Person lucho = new Person()`.
 
-- **Variables de clase**: A diferencia de las variables de instancia, que representan el estado de un objeto, las variables de clase está asociadas a la propia clase y, por lo tanto, su valor es el mismo para todas las instancias de esa clase. Las variables de clase se declaran en C# con la palabra clase `static` antes de la declaración de la variable.
+- **Variables de clase**: A diferencia de las variables de instancia, que
+  representan el estado de un objeto, las variables de clase está asociadas a la
+  propia clase y, por lo tanto, su valor es el mismo para todas las instancias
+  de esa clase. Las variables de clase se declaran en C# con la palabra clase
+  `static` antes de la declaración de la variable.
 
-- **Parámetros**: Los métodos pueden recibir parámetros, como en el ejemplo `void SetFamilyName(string value)`; allí, el método de nombre `SetFamilyName` recibe un parámetro de tipo `String` y nombre `value`. El objeto que envíe un mensaje para que se ejecute ese método deberá proveer un objeto de tipo `String` para ese parámetro cuando envíe el mensaje.
+- **Parámetros**: Los métodos pueden recibir parámetros, como en el ejemplo
+  `void SayHiTo(Person person)`; allí, el método de nombre `SayHiTo` recibe un
+  parámetro de tipo `Person` y nombre `person`. El objeto que envíe un mensaje
+  para que se ejecute ese método deberá proveer un objeto de tipo `Person` para
+  ese parámetro cuando envíe el mensaje.
 
-Todas las variables y parámetros tienen un valor predeterminado, a menos que asignemos uno diferente. El valor depende del tipo de la variable. En los casos donde el tipo es una clase declarada por nosotros, como `Person`, el valor predeterminado de una variable de ese tipo es `null`. En otros casos, el valor predeterminado puede obtenerse con `defaut()`. Pueden ver más detalles [aquí](https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/default-values).
+Todas las variables y parámetros tienen un valor predeterminado, a menos que
+asignemos uno diferente. El valor depende del tipo de la variable. En los casos
+donde el tipo es una clase declarada por nosotros, como `Person`, el valor
+predeterminado de una variable de ese tipo es `null`. En otros casos, el valor
+predeterminado puede obtenerse con `defaut()`. Pueden ver más detalles
+[aquí](https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/default-values).
 
 ## ¿Cuánto viven los objetos?
 
-Excepto por los objetos literales, los demás deben crearse con la palabra clave `new`. Con esa palabra clave se invoca el constructor de la clase, que crea una nueva instancia de esa clase.
+Excepto por los objetos literales, los demás deben crearse con la palabra clave
+`new`. Con esa palabra clave se invoca el constructor de la clase, que crea una
+nueva instancia de esa clase.
 
-En la clase `Person` que usamos hasta ahora, el constructor predeterminado permite crear instancias de personas sin nombre ni apellido. Para evitar eso tenemos que crear un constructor que nos pida como parámetro el valor inicial del nombre y del apellido. Cuando definimos un constructor, el constructor predeterminado deja de existir, y sólo podemos utilizar el que definimos, con lo que logramos que todas las personas tengan un nombre y un apellido en el momento de ser creados.
+En la clase `Person` que usamos hasta ahora, el constructor predeterminado
+permite crear instancias de personas sin nombre ni apellido. Para evitar eso
+tenemos que crear un constructor que nos pida como parámetro el valor inicial
+del nombre y del apellido. Cuando definimos un constructor, el constructor
+predeterminado deja de existir, y sólo podemos utilizar el que definimos, con lo
+que logramos que todas las personas tengan un nombre y un apellido en el momento
+de ser creados.
 
 Definimos un nuevo constructor así:
 
@@ -388,22 +558,6 @@ En la sección de arriba va el nombre de la clase, en la sección de abajo a la 
 
 Estas "tarjetas" se llaman CRC por "clases", "responsabilidades" y "colaboraciones".
 
-Agreguemos a nuestra clase `Person` la responsabilidad de presentarse a otra persona:
-
-```csharp
-public void IntroduceTo(Person person)
-{
-    if (person != null)
-    {
-        Console.WriteLine($"Hola, {person.Name}, mi nombre es {this.Name}");
-    }
-}
-```
-
-> [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v5/src/Library/Person.cs#L55-L61)
-
-<br>
-
 Creemos la tarjeta para la clase `Person` con la que representamos las personas, y la responsabilidades de conocer el nombre, el apellido, y de presentarse:
 
 <table id="card" border="1px solid">
@@ -439,24 +593,24 @@ classDiagram
 class Person{
         +Name: String
         +FamilyName: String
-        +IntroduceTo(Person)
+        +SayHiTo(Person)
 }
 ```
 
-El símbolo `+` delante de los miembros -propiedades, variables de instancia, métodos, etc.- indica que el miembro es público. Las propiedades y variables de instancia aparecen con el nombre primero y el tipo después, separados por el símbolo `:`. Los métodos aparece con el nombre primero, los tipos de los parámetros después, separados por los símbolos `(` y `)`, y el tipo al final, separado por el símbolo `:` –si existiera, no ocurre en este caso pues el método `IntroduceTo` no retorna ningún valor–.
+El símbolo `+` delante de los miembros -propiedades, variables de instancia, métodos, etc.- indica que el miembro es público. Las propiedades y variables de instancia aparecen con el nombre primero y el tipo después, separados por el símbolo `:`. Los métodos aparece con el nombre primero, los tipos de los parámetros después, separados por los símbolos `(` y `)`, y el tipo al final, separado por el símbolo `:` –si existiera, no ocurre en este caso pues el método `SayHiTo` no retorna ningún valor–.
 
 <br>
 
-Vamos a crear también una tarjeta para la clase `Program`, que es la otra clase que venimos usando en estos ejemplos. La responsabilidad de presentarse a otra persona es usada en `Program` en el método `IntroducePersons()`.
+Vamos a crear también una tarjeta para la clase `Program`, que es la otra clase que venimos usando en estos ejemplos. La responsabilidad de presentarse a otra persona es usada en `Program` en el método `Main()`.
 
 ```csharp
 public static void IntroducePersons()
-        {
-            Person lucho = new Person("Luis", "Suárez");
-            Person chino = new Person("Sergio", "Rochet");
-            chino.IntroduceTo(lucho);
-            lucho.IntroduceTo(chino);
-        }
+{
+    Person lucho = new Person("Luis", "Suárez");
+    Person chino = new Person("Sergio", "Rochet");
+    chino.SayHiTo(lucho);
+    lucho.SayHiTo(chino);
+}
 ```
 
 > [Ver en repositorio »](https://github.com/ucudal/PII_Person/blob/main/v5/src/Program/Program.cs#L102-L108)
@@ -491,15 +645,15 @@ classDiagram
 class Person{
         +Name: String
         +FamilyName: String
-        +IntroduceTo(Person)
+        +SayHiTo(Person)
 }
 class Program{
-    +IntroducePersons()
+    +Main()
 }
 Program..>Person
 ```
 
-Las líneas punteadas representa que `Program` depende de `Person` pero nada más, la referencias a esas clases son simples variables definidas localmente en el método `IntroducePersons()`.
+Las líneas punteadas representa que `Program` depende de `Person` pero nada más, la referencias a esas clases son simples variables definidas localmente en el método `SayHiTo()`.
 
 > [1.3 Guías para la asignación de responsabilidades »](./1_3_Guias.md)
 

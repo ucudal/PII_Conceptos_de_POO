@@ -4,6 +4,66 @@
 
 ## 1.1 Contenido
 
+Uno de los objetivos de este curso, tal vez el más importante, es que
+puedas modelar aspectos del mundo real identificando clases, asignándoles
+responsabilidades, y haciendo que colaboren, para producir software de tal forma
+que los datos y la lógica se distribuyan en forma razonablemente equilibrada
+entre objetos de esas clases, que colaboran para lograr que el software haga lo
+que debe.
+
+La clave en el objetivo anterior es *modelar aspectos del mundo real*. El mundo
+real es un lugar complejo: cuanto más de cerca lo mires, más complejidad vas a
+ver, como en un [fractal](https://en.wikipedia.org/wiki/Fractal). ¿Cómo puedes
+manejar esa complejidad? ¿Cómo logras entender el mundo para poder modelarlo en
+software?
+
+Las personas habitualmente entendemos el mundo construyendo modelos mentales de
+algunas de partes de ese mundo. Por ejemplo, considera un mapa, como los que ves
+en [Google Maps](https://www.google.com/maps). Un mapa es como un modelo de un
+lugar: nos permite interactuar con el lugar, por ejemplo, recorrerlo o encontrar
+puntos interesantes en ese lugar. Para que sea útil, el mapa no tiene exactmente
+todos los detalles del lugar, si tuviera exactamente los mismos detalles que el
+lugar, no sería muy útil.
+
+Un mapa es útil porque abstrae los aspectos más relevantes del lugar que nos
+interesan. ¿Quieres ver cómo luce el lugar desde arriba? Usas un mapa de vista
+aérea. ¿Quieres ver si hay calles congestionadas? Usas un mapa de tráfico.
+¿Quieres saber si hay subidas empinadas? Usas un mapa de terreno. Los distintos
+tipos de mapas tienen detalles diferentes, ninguno tiene todos los detalles.
+
+El proceso de identificar los aspectos más relevantes de los objetos —de las cosas—
+en el mundo real se llama **abstracción**.
+
+<details open>
+<summary>🗒 Tarjeta: Abstracción ±</summary>
+
+| Abstracción |
+| ---- |
+| Una **abstracción** expresa las características **esenciales** de un objeto, que lo distinguen de todos los demás tipos de objetos, y que provee límites conceptuales claramente definidos, relativos a la perspectiva del usuario. |
+
+</details>
+<br/>
+
+La abstracción es una de las formas más importantes que tenemos las personas de
+lidiar con la complejidad.
+
+![](https://effectivesoftwaredesign.com/wp-content/uploads/2016/09/cat-abstraction.jpg)
+
+Además de con la abstracción, también podemos manejar la complejidad a través del
+**escondimiento de información** o **encapsulación**.
+
+<details open>
+<summary>🗒 Tarjeta: Encapsulación ±</summary>
+
+| Encapsulación |
+| ---- |
+| La **encapsulación** es el proceso de ocultar todos los detalles de un objeto que no contribuyen a sus características esenciales. Es sinónimo de escondimiento de información. |
+
+</details>
+<br/>
+
+![](https://effectivesoftwaredesign.com/wp-content/uploads/2016/09/cat-encapsulation.png)
+
 Los programas manejan ciertos datos usando cierta lógica o algoritmo. En un programa orientado a objetos hay un conjunto de **objetos** que colaboran pidiendo y prestando servicios.
 
 No hay solo un lugar donde se concentren los datos y la lógica del programa, sino que los datos y la lógica están distribuidas en forma razonablemente equilibrada entre todos y cada uno de los objetos.
@@ -74,19 +134,7 @@ El estado de un objeto no es accesible directamente a otros objetos. Cuando un o
 
 El hecho de que otros objetos no conozcan la representación interna de los atributos, ni la forma en la cual están implementadas los métodos de los demás objetos, se conoce como encapsulación. La encapsulación permite independizarse de los detalles de implementación de un objeto y concentrarse únicamente en los aspectos esenciales del mismo.
 
-La encapsulación es el mecanismo que permite integrar en una misma unidad -el objeto- comportamiento y estado, haciéndolos solo accesibles mediante el envío de mensajes.
-
-<details open>
-<summary>🗒 Tarjeta: Encapsulación ±</summary>
-
-| Encapsulación |
-| ---- |
-| La **encapsulación** es el resultado de ocultar todos los detalles acerca de la implementación de las responsabilidades. |
-| Es sinónimo de **escondimiento de información**. |
-
-</details>
-
-<br/>
+La encapsulación permite integrar en una misma unidad -el objeto- comportamiento y estado, haciéndolos solo accesibles mediante el envío de mensajes.
 
 <details open>
 <summary>🗒 Tarjeta: Público/Privado ±</summary>
