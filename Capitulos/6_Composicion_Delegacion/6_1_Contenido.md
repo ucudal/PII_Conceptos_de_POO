@@ -20,7 +20,7 @@ efectos de contener esos métodos; esto es llamado **composición**.
 
 | Composición |
 | ---- |
-| La composición es una asociación fuerte entre una clase compuesta y una clase componente en la que instancias de la clase componente no suelen existir independiente de instancias de la clase compuesta. |
+| La composición es una asociación fuerte entre una clase compuesta y una clase componente en la que instancias de la clase componente no suelen existir de forma independiente de instancias de la clase compuesta. |
 
 </details>
 <br/>
@@ -100,9 +100,9 @@ entre tipo y subtipo, lo que conduce a la violación del principio de
 sustitución. Lo consideramos una anomalía y no debe ser tenido en cuenta.
 [^2]: Lamentablemente son pocos los lenguajes que implementan herencia múltiple. -->
 
-La composición reduce las dependencias indeseables, porque require sólo de la
-interfaz pública dada por los tipos de los objetos y no depende de detaller
-internos de implementación. La composición también favorece el diseño clases
+La composición reduce las dependencias indeseables, porque requiere sólo de la
+interfaz pública dada por los tipos de los objetos y no depende de detallar
+internos de implementación. La composición también favorece el diseño de clases
 encapsuladas y enfocadas a una sola tarea; como consecuencia, las jerarquías de
 clases se mantienen razonablemente reducidas y manejables.
 
@@ -115,7 +115,7 @@ conjunto de módulos altamente cohesivos y poco acoplados.
 
 | Cohesión |
 | ---- |
-| La cohesión es la forma y el grado en el que las responsabilidades de una clase o de las clases contenidas en un paquete están relacionas unas con otras. |
+| La cohesión es la forma y el grado en el que las responsabilidades de una clase o de las clases contenidas en un paquete están relacionadas unas con otras. |
 | Cuando la cohesión es alta es mejor. |
 
 </details>
