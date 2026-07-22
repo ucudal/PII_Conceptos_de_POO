@@ -3,9 +3,7 @@ width="150"/>
 
 # Universidad Católica del Uruguay
 
-## Facultad de Ingeniería y Tecnologías
-
-### Programación II
+## Programación II
 
 # Conceptos de Programación Orientada a Objetos
 

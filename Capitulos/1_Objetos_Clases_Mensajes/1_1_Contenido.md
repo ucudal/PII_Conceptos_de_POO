@@ -79,7 +79,14 @@ No hay solo un lugar donde se concentren los datos y la lógica del programa, si
 
 <br/>
 
-Esto significa que cada objeto tiene una parte de los datos y una parte de la lógica del programa. Cada objeto tiene así la responsabilidad de conocer la parte de los datos que le corresponde y de hacer la parte de la lógica que le corresponde. Cada dato que un objeto conoce es un **atributo**. El **estado** del objeto son los datos que conoce, es decir, es el conjunto de atributos y de valores de esos atributos<sup>1</sup>. El **comportamiento** del objeto las cosas que hace. Los **métodos** son la realización o implementación del comportamiento de los objetos.
+Esto significa que cada objeto tiene una parte de los datos y una parte de la
+lógica del programa. Cada objeto tiene así la responsabilidad de conocer la
+parte de los datos que le corresponde y de hacer la parte de la lógica que le
+corresponde. Cada dato que un objeto conoce es un **atributo**. El **estado**
+del objeto son los datos que conoce, es decir, es el conjunto de atributos y de
+valores de esos atributos<sup>1</sup>. El **comportamiento** del objeto refiere
+a las cosas que hace. Los **métodos** son la realización o implementación del
+comportamiento de los objetos.
 
 <details open>
 <summary>🗒 Tarjeta: Estado ±</summary>
@@ -105,7 +112,7 @@ Esto significa que cada objeto tiene una parte de los datos y una parte de la l�
 
 <br/>
 
-Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden únicamente mediante el envío **mensajes**. El objeto que envía el mensaje quiere consultar o cambiar el estado o quiere activar cierto com- portamiento del objeto que recibe el mensaje. El receptor responde a la solicitud ejecutando un método. El **selector** de un mensaje es el nombre del método que el emisor desea que el receptor ejecute cuando reciba el mensaje.
+Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden únicamente mediante el envío **mensajes**. El objeto que envía el mensaje quiere consultar o cambiar el estado o quiere activar cierto comportamiento del objeto que recibe el mensaje. El receptor responde a la solicitud ejecutando un método. El **selector** de un mensaje es el nombre del método que el emisor desea que el receptor ejecute cuando reciba el mensaje.
 
 <details open>
 <summary>🗒 Tarjeta: Mensaje ±</summary>
@@ -113,7 +120,7 @@ Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden ún
 | Mensaje |
 | ---- |
 | Los objetos se comunican mediante el envío **mensajes**. |
-| El objeto que **emisor** del mensaje quiere consultar o cambiar el **estado** o quiere ejecutar cierto **comportamiento** del objeto **receptor** del mensaje |
+| El objeto que es **emisor** del mensaje quiere consultar o cambiar el **estado** o quiere ejecutar cierto **comportamiento** del objeto **receptor** del mensaje |
 
 </details>
 
@@ -132,7 +139,7 @@ Los objetos colaboran pidiendo y prestando servicios. Los servicios se piden ún
 
 El estado de un objeto no es accesible directamente a otros objetos. Cuando un objeto necesita conocer el valor de un atributo de otro objeto, le envía a este último un mensaje preguntándoselo. El emisor no tiene porqué conocer cómo se representa internamente un atributo; el receptor podría retornar un valor que tiene guardado o podría calcularlo cada vez que fuera necesario. De la misma forma, cuando un objeto quiere cambiar el valor de un atributo de otro objeto, le envían un mensaje a este último con el nuevo valor; el receptor podrá guardar el nuevo valor o procesar el mensaje de alguna forma para que el estado cambie tal como lo solicitó el emisor.
 
-El hecho de que otros objetos no conozcan la representación interna de los atributos, ni la forma en la cual están implementadas los métodos de los demás objetos, se conoce como encapsulación. La encapsulación permite independizarse de los detalles de implementación de un objeto y concentrarse únicamente en los aspectos esenciales del mismo.
+El hecho de que otros objetos no conozcan la representación interna de los atributos, ni la forma en la cual están implementadas los métodos de los demás objetos, se conoce como **encapsulación**. La encapsulación permite independizarse de los detalles de implementación de un objeto y concentrarse únicamente en los aspectos esenciales del mismo.
 
 La encapsulación permite integrar en una misma unidad -el objeto- comportamiento y estado, haciéndolos solo accesibles mediante el envío de mensajes.
 
@@ -148,7 +155,7 @@ La encapsulación permite integrar en una misma unidad -el objeto- comportamient
 
 <br/>
 
-Los objetos con los mismos atributos y métodos son producidos con el mismo molde. La **clase** del objeto es ese molde. Es objeto es una **instancia** de esa clase. Los objetos no pueden pertenecer a más de una clase. La clase de un objeto habitualmente no cambia durante la vida del objeto<sup>2</sup>.
+Los objetos con los mismos atributos y métodos son producidos con el mismo molde. La **clase** del objeto es ese molde. Ese objeto es una **instancia** de esa clase. Los objetos no pueden pertenecer a más de una clase. La clase de un objeto habitualmente no cambia durante la vida del objeto<sup>2</sup>.
 
 <details open>
 <summary>🗒 Tarjeta: Clase ±</summary>
@@ -269,7 +276,7 @@ El **runtime** es una máquina virtual donde se ejecuta el programa. Esta máqui
 
 | Asignación de variables |
 | ---- |
-| Cuando se asigna una variable con el valor de otra variable que referencia un objeto se copia la dirección de memoria en el **heap** de ese objeto. Luego de la asignación las dos variables que apuntan a la misma dirección de memoria. |
+| Cuando se asigna una variable con el valor de otra variable que referencia a un objeto, se copia la dirección de memoria que contiene en el **heap** para ese objeto. Luego de la asignación, las dos variables apuntan a la misma dirección de memoria. |
 
 </details>
 <br/>
@@ -294,7 +301,7 @@ Cuando se destruye un objeto suceden dos cosas:
 
 2.	Se libera la memoria ocupada por el objeto, es decir, se retorna para que pueda ser utilizada más adelante cuando se creen otros objetos.
 
-> En C# método constructor tiene el mismo nombre que la clase, mientras que el método finalizador o destructor tiene el nombre de la clase precedido por el símbolo ```~```. Vean más información [aquí](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/destructors).
+> En C# un método constructor tiene el mismo nombre que la clase, mientras que el método finalizador o destructor tiene el nombre de la clase precedido por el símbolo ```~```. Vean más información [aquí](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/destructors).
 
 Todos los recursos que un objeto consuma en el constructor -abrir archivos, conexiones de red, conexiones a bases de datos, etc.- deben ser liberados en el destructor -cerrar archivos, conexiones, etc.-.
 
